@@ -224,7 +224,8 @@ def get_crosswalk_area_ahead(position, rotation, osm_map_info, dist: int = 50) -
         return nearest_crosswalk
     else:
         print("multiple crosswalks!")
-        exit(-1)
+        # exit(-1)
+        return None
 
 
 def get_crosswalks_to_pass(route, osm_map_info) -> Polygon:

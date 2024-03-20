@@ -4,6 +4,9 @@ mutator.mutator
 from enum import Enum
 import os
 
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 data_dir = os.path.join(os.path.dirname(__file__), "data")
 map_dir = os.path.join(os.path.dirname(__file__), "../map/")
 
@@ -195,17 +198,17 @@ class DrivingConditionType(Enum):
     DOUBLE_YELLOW_LINE = 2
     OVERTAKING = 3
     EGO_STOP = 4
-    NPC_STOP_AT_CROSSWALK = 4
-    PEDESTRIAN_AT_CROSSWALK = 5
-    AT_CROSSWALK = 6
-    AT_INTERSECTION = 7
-    TRAFFIC_LIGHT_YELLOW = 8
-    NEAR_CROSSWALK = 9
-    NEAR_SIGNAL = 10
-    NEAR_STOP_SIGN = 11
-    PEDESTRIAN_AT_CROSSWALK_TURNING_SIDE = 12
-    IN_ADJACENT_LANE = 13
-    AHEAD_OF_NPC = 14
+    NPC_STOP_AT_CROSSWALK = 5
+    PEDESTRIAN_AT_CROSSWALK = 6
+    AT_CROSSWALK = 7
+    AT_INTERSECTION = 8
+    TRAFFIC_LIGHT_YELLOW = 9
+    NEAR_CROSSWALK = 10
+    NEAR_SIGNAL = 11
+    NEAR_STOP_SIGN = 12
+    PEDESTRIAN_AT_CROSSWALK_TURNING_SIDE = 13
+    IN_ADJACENT_LANE = 14
+    AHEAD_OF_NPC = 15
 
 
 class DrivingCondition:

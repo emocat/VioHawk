@@ -19,6 +19,7 @@ import dataparser as _Parser
 import utils.lawbreaker as _Lawbreaker
 import utils.avfuzzer as _AVFuzzer
 import utils.drivefuzz as _DriveFuzz
+import utils.able as _Able
 
 from run_vse import VSERunner
 
@@ -127,6 +128,9 @@ class Fuzzer:
         except IndexError as e:
             LOG.info("IndexError: {}".format(e))
             return None, None
+        except Exception as e:
+            LOG.info("Unknown Exception: {}".format(e))
+            return None, None
 
         if res == -1:
             _seed.store(self.workdir + "/violation/" + str(_seed.get_hash()))
@@ -147,6 +151,9 @@ class Fuzzer:
             factory = _DriveFuzz.DriveFuzzFactory(_seed, trace_path, self.rule)
             score = factory.calc_feedback()
             mutator = factory
+        elif self.strategy == "able":
+            score = res
+            mutator = trace_path
         else:
             LOG.error("Unknown strategy: {}".format(self.strategy))
             exit(-1)
@@ -165,7 +172,7 @@ class Fuzzer:
 
         scenario.store(self.workdir + "/queue/" + str(scenario.get_hash()))
 
-    def population_get(self) -> (_Parser.scenario.Scenario, _Mutator.Mutator):
+    def population_get(self):
         def softmax_with_temperature(data, temperature=1.0):
             scaled_data = data / temperature
             exp_data = np.exp(scaled_data - np.max(scaled_data))
@@ -241,6 +248,41 @@ class Fuzzer:
                 self.hashes.add(new_scenario.get_hash())
         return
 
+    def execute_able(self):
+        # first initialize the seed queue of fuzzing by executing the initial seeds in the corpus
+        for scenario in self.corpus:
+            LOG.info(scenario.seed_path)
+            mutator, res = self.run_instance(scenario)
+            if res is not None:
+                scenario.verified = True
+                scenario.score = res
+                self.population_add((scenario, mutator))
+                self.hashes.add(scenario.get_hash())
+
+        session = os.path.basename(os.path.dirname(os.path.abspath(self.workdir)))
+        LOG.info("Session: " + session)
+
+        factory = _Able.AbleFactory(session=session, rule=self.rule)
+
+        for i in range(4):
+            new_scenario_batch = factory.mutate()
+            LOG.info("Round {}/4 - New Scenarios: {}".format(i + 1, len(new_scenario_batch)))
+
+            batch_testdata = []
+            for new_scenario in new_scenario_batch:
+                new_scenario.store(self.workdir + "/queue/" + str(new_scenario.get_hash()))
+                trace_path, res = self.run_instance(new_scenario)
+                if res is not None:
+                    new_scenario.verified = True
+                    new_scenario.score = res
+                    self.population_add((new_scenario, trace_path))
+                    self.hashes.add(new_scenario.get_hash())
+
+                    output_trace = factory.generate_testdata(new_scenario, trace_path)
+                    batch_testdata.append(output_trace)
+
+            factory.merge_newdata_into_dataset(batch_testdata)
+
 
 @click.command()
 @click.option(
@@ -267,7 +309,7 @@ class Fuzzer:
 @click.option(
     "-s",
     "--strategy",
-    type=click.Choice(["viohawk", "avfuzzer", "lawbreaker", "drivefuzz"]),
+    type=click.Choice(["viohawk", "avfuzzer", "lawbreaker", "drivefuzz", "able"]),
     default="viohawk",
     help="The strategy for fuzzing.",
 )
@@ -284,7 +326,10 @@ def fuzz(input, output, map, strategy, rule):
     LOG.info("Fuzzing Start.")
     LOG.info("Strategy: " + strategy)
     fuzzer = Fuzzer(input, output, map, strategy, rule)
-    fuzzer.execute()
+    if strategy == "able":
+        fuzzer.execute_able()
+    else:
+        fuzzer.execute()
     LOG.info("Fuzzing End.")
 
 
