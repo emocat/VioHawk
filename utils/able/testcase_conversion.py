@@ -2,7 +2,8 @@ import math
 import copy
 import dataparser
 
-import lawbreaker_helper
+# import lawbreaker_helper
+import utils.able.lawbreaker_helper as lawbreaker_helper
 from shapely.geometry import Polygon
 
 
@@ -571,8 +572,8 @@ def update_scenario_from_testcase(scenario: dataparser.scenario.Scenario, testca
     new_point = lawbreaker_helper.find_the_point_on_line_for_lgsvl(new_point)
     new_scenario.elements["ego"][0].transform.position = new_point.position.to_json()
     new_scenario.elements["ego"][0].transform.rotation = new_point.rotation.to_json()
-    print("[+] mutate ego position from {} -> {}".format(scenario.elements["ego"][0].transform.position, new_scenario.elements["ego"][0].transform.position))
-    print("[+] mutate ego rotation from {} -> {}".format(scenario.elements["ego"][0].transform.rotation, new_scenario.elements["ego"][0].transform.rotation))
+    # print("[+] mutate ego position from {} -> {}".format(scenario.elements["ego"][0].transform.position, new_scenario.elements["ego"][0].transform.position))
+    # print("[+] mutate ego rotation from {} -> {}".format(scenario.elements["ego"][0].transform.rotation, new_scenario.elements["ego"][0].transform.rotation))
 
     new_ego_destination = testcase["ego"]["destination"]
     new_ego_destination_position = map_info.get_position([new_ego_destination["lane_position"]["lane"], new_ego_destination["lane_position"]["offset"]])
@@ -580,8 +581,8 @@ def update_scenario_from_testcase(scenario: dataparser.scenario.Scenario, testca
     new_point = lawbreaker_helper.find_the_point_on_line_for_lgsvl(new_point)
     new_scenario.elements["ego"][0].destination.position = new_point.position.to_json()
     new_scenario.elements["ego"][0].destination.rotation = new_point.rotation.to_json()
-    print("[+] mutate ego destination position from {} -> {}".format(scenario.elements["ego"][0].destination.position, new_scenario.elements["ego"][0].destination.position))
-    print("[+] mutate ego destination rotation from {} -> {}".format(scenario.elements["ego"][0].destination.rotation, new_scenario.elements["ego"][0].destination.rotation))
+    # print("[+] mutate ego destination position from {} -> {}".format(scenario.elements["ego"][0].destination.position, new_scenario.elements["ego"][0].destination.position))
+    # print("[+] mutate ego destination rotation from {} -> {}".format(scenario.elements["ego"][0].destination.rotation, new_scenario.elements["ego"][0].destination.rotation))
 
     new_npcs = testcase["npcList"]
     for npc_idx in range(len(new_npcs)):
@@ -591,15 +592,15 @@ def update_scenario_from_testcase(scenario: dataparser.scenario.Scenario, testca
         new_point = lawbreaker_helper.find_the_point_on_line_for_lgsvl(new_point)
         new_scenario.elements["npc"][npc_idx].transform.position = new_point.position.to_json()
         new_scenario.elements["npc"][npc_idx].transform.rotation = new_point.rotation.to_json()
-        print("[+] mutate npc {} position from {} -> {}".format(npc_idx, scenario.elements["npc"][npc_idx].transform.position, new_scenario.elements["npc"][npc_idx].transform.position))
-        print("[+] mutate npc {} rotation from {} -> {}".format(npc_idx, scenario.elements["npc"][npc_idx].transform.rotation, new_scenario.elements["npc"][npc_idx].transform.rotation))
+        # print("[+] mutate npc {} position from {} -> {}".format(npc_idx, scenario.elements["npc"][npc_idx].transform.position, new_scenario.elements["npc"][npc_idx].transform.position))
+        # print("[+] mutate npc {} rotation from {} -> {}".format(npc_idx, scenario.elements["npc"][npc_idx].transform.rotation, new_scenario.elements["npc"][npc_idx].transform.rotation))
 
         new_speed = new_npc["start"]["speed"]
         if new_scenario.elements["npc"][npc_idx].behaviour.name == "NPCLaneFollowBehaviour":
             new_scenario.elements["npc"][npc_idx].behaviour.maxSpeed = new_speed
         else:
             raise Exception("Unknown NPC behaviour: {}".format(new_scenario.elements["npc"][npc_idx].behaviour.name))
-        print("[+] mutate npc {} speed from {} -> {}".format(npc_idx, scenario.elements["npc"][npc_idx].behaviour.maxSpeed, new_scenario.elements["npc"][npc_idx].behaviour.maxSpeed))
+        # print("[+] mutate npc {} speed from {} -> {}".format(npc_idx, scenario.elements["npc"][npc_idx].behaviour.maxSpeed, new_scenario.elements["npc"][npc_idx].behaviour.maxSpeed))
 
     new_pedestrians = testcase["pedestrianList"]
     for pedestrian_idx in range(len(new_pedestrians)):
@@ -609,12 +610,12 @@ def update_scenario_from_testcase(scenario: dataparser.scenario.Scenario, testca
         new_point = lawbreaker_helper.find_the_point_on_line_for_lgsvl(new_point)
         new_scenario.elements["pedestrian"][pedestrian_idx].transform.position = new_point.position.to_json()
         new_scenario.elements["pedestrian"][pedestrian_idx].transform.rotation = new_point.rotation.to_json()
-        print("[+] mutate pedestrian {} position from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].transform.position, new_scenario.elements["pedestrian"][pedestrian_idx].transform.position))
-        print("[+] mutate pedestrian {} rotation from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].transform.rotation, new_scenario.elements["pedestrian"][pedestrian_idx].transform.rotation))
+        # print("[+] mutate pedestrian {} position from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].transform.position, new_scenario.elements["pedestrian"][pedestrian_idx].transform.position))
+        # print("[+] mutate pedestrian {} rotation from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].transform.rotation, new_scenario.elements["pedestrian"][pedestrian_idx].transform.rotation))
 
         new_pedestrian_speed = new_pedestrian["start"]["speed"]
         new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[0].speed = new_pedestrian_speed
-        print("[+] mutate pedestrian {} speed from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].wayPoints[0].speed, new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[0].speed))
+        # print("[+] mutate pedestrian {} speed from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].wayPoints[0].speed, new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[0].speed))
 
         new_pedestrian_destination = new_pedestrian["destination"]
         new_pedestrian_destination_position = new_pedestrian_destination["position"]
@@ -622,11 +623,11 @@ def update_scenario_from_testcase(scenario: dataparser.scenario.Scenario, testca
         new_point = lawbreaker_helper.find_the_point_on_line_for_lgsvl(new_point)
         new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].position = new_point.position.to_json()
         new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].angle = new_point.rotation.to_json()
-        print("[+] mutate pedestrian {} destination position from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].position, new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].position))
-        print("[+] mutate pedestrian {} destination rotation from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].angle, new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].angle))
+        # print("[+] mutate pedestrian {} destination position from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].position, new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].position))
+        # print("[+] mutate pedestrian {} destination rotation from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].angle, new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].angle))
 
         new_pedestrian_destination_speed = new_pedestrian_destination["speed"]
         new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].speed = new_pedestrian_destination_speed
-        print("[+] mutate pedestrian {} destination speed from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].speed, new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].speed))
+        # print("[+] mutate pedestrian {} destination speed from {} -> {}".format(pedestrian_idx, scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].speed, new_scenario.elements["pedestrian"][pedestrian_idx].wayPoints[-1].speed))
 
     return new_scenario
