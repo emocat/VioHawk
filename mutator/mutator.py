@@ -412,13 +412,18 @@ class DrivingCondition:
         junction_area = helper.get_junction_area_ahead(
             traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info
         )
+        crosswalk_area = helper.get_crosswalk_area_ahead(
+            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info
+        )
 
         NPCs = traces[time_step + config.planning.steps_computation]["NPCs"]
         for NPC in NPCs:
             NPC_wheel = helper.get_four_wheel_position(NPC["Position"], NPC["Rotation"])
             NPC_polygon = Polygon(NPC_wheel)
             NPC_speed = helper.calc_speed(NPC["Velocity"])
-            if NPC_polygon.distance(junction_area) < 5 and NPC_speed < 0.1:
+            NPC_lane = map_info.check_whether_in_lane_area(Point(NPC["Position"]["x"], NPC["Position"]["z"]))
+            NPC_lane = NPC_lane[0]["lane_id"] if len(NPC_lane) != 0 else None
+            if NPC_polygon.distance(crosswalk_area) < 5 and NPC_speed < 0.1 and NPC_polygon.distance(junction_area) != 0 and NPC_lane != None:
                 return INFINITE_POLYGON
 
         return EMPTY_POLYGON
@@ -432,7 +437,7 @@ class DrivingCondition:
         NPCs = traces[time_step + config.planning.steps_computation]["NPCs"]
         for NPC in NPCs:
             if NPC["Label"] == "Pedestrian":
-                ped_point = Point(NPC["Position"]["x"], NPC["Position"]["z"])
+                ped_point = Point(NPC["Position"]["x"], NPC["Position"]["z"]).buffer(0.5)
                 if ped_point.within(junction_area):
                     return INFINITE_POLYGON
 
@@ -477,6 +482,8 @@ class DrivingCondition:
         # extend crosswalk area by 20m
         crosswalk_polygon = convert_polygon_to_curvilinear_coords(crosswalk_area, config.planning.CLCS)
         x, y = crosswalk_polygon.exterior.coords.xy
+        if len(x) == 0:
+            return EMPTY_POLYGON
         x_mid = (max(x) + min(x)) / 2
         area = np.array(list(zip(x, y)))
         for i in range(len(area)):
@@ -520,7 +527,7 @@ class DrivingCondition:
         NPCs = traces[time_step + config.planning.steps_computation]["NPCs"]
         for NPC in NPCs:
             if NPC["Label"] == "Pedestrian":
-                ped_point = Point(NPC["Position"]["x"], NPC["Position"]["z"])
+                ped_point = Point(NPC["Position"]["x"], NPC["Position"]["z"]).buffer(0.5)
                 for crosswalk in crosswalk_area:
                     if ped_point.within(crosswalk):
                         return INFINITE_POLYGON
