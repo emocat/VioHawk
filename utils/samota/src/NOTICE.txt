@@ -1,0 +1,18 @@
+SAMOTA is © 2022 University of Luxembourg
+and is distributed under the MIT license.
+
+Authors:
+  - Fitash UL HAQ (fitash.ulhaq@uni.lu)
+  - Donghwan Shin (donghwan.shin@uni.lu)
+  - Lionel Briand (lionel.briand@uni.lu)
+
+Paper:
+  - "Efficient Online Testing for DNN-Enabled Systems using Surrogate-Assisted and Many-Objective Optimization", ICSE 2022
+
+SAMOTA includes the following components:
+  - Binaries of CARLA licensed under MIT license
+  - Pylot licensed under Apache 2.0 license
+
+Pylot licensed under Apache 2.0 license (code under implementation/pylot, implementation/scripts)
+
+
