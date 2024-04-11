@@ -65,7 +65,7 @@ class SamotaFactory:
         with open(trace_path, 'r') as file:
             traces = json.load(file) 
         
-        map_path = "/home/apollo/VioHawk/map/san_francisco.json"
+        map_path = "~/VioHawk/map/san_francisco.json"
         map_info = map_helper.get_map_info(map_path)
         robustness = testcase_conversion.calculate_robustness(traces,map_info,scenario)
         return robustness
