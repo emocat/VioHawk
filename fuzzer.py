@@ -239,17 +239,21 @@ class Fuzzer:
             new_scenario.store(self.workdir + "/queue/" + str(new_scenario.get_hash()))
             mutator, res = self.run_instance(new_scenario)
             if res is not None:
-                if self.population_dup(res):
-                    LOG.info("Similar seed: {}".format(new_scenario.get_hash()))
-                    continue
-
                 LOG.info("Original seed: {}".format(new_scenario.seed_path))
                 LOG.info("Saved seed: {}".format(new_scenario.get_hash()))
                 LOG.info("Queue size: {}".format(len(self.population)))
                 new_scenario.verified = True
                 new_scenario.score = res
-                self.population_add((new_scenario, mutator))
-                self.hashes.add(new_scenario.get_hash())
+
+                if self.population_dup(res):
+                    LOG.info("Similar seed: {}".format(new_scenario.get_hash()))
+                else:
+                    self.population_add((new_scenario, mutator))
+                    self.hashes.add(new_scenario.get_hash())
+
+                log_info = f"{curr_scenario.get_hash()}\t{curr_scenario.score}\t{curr_mutator.max_poly_i}\t{curr_mutator.mutate_choice}\t{new_scenario.get_hash()}\t{new_scenario.score}\n"
+                with open(self.workdir + "/info", "a") as f:
+                    f.write(log_info)
         return
 
     def execute_able(self):

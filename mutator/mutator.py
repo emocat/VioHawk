@@ -603,6 +603,7 @@ class Mutator(metaclass=abc.ABCMeta):
         self.nine_space = None
         self.nine_poly = None
         self.max_poly_i = -1
+        self.mutate_choice = -1
 
         self.driving_intention = None
         self.driving_condition = None
@@ -903,7 +904,13 @@ class Mutator(metaclass=abc.ABCMeta):
             wp = Point(npc_trace["Position"]["x"], npc_trace["Position"]["z"])
             for i in range(9):
                 if wp.within(self.nine_space[i]):
+                    if i == 0 or i == 2:
+                        tmp_npc_polygon = Polygon(helper.get_four_wheel_position(npc_trace["Position"], npc_trace["Position"]))
+                        if tmp_npc_polygon.intersection(self.nine_space[i]).area / tmp_npc_polygon.area < 0.95:
+                            nine_space_npc_list[i + 3].append(npc_trace)
+                            continue
                     nine_space_npc_list[i].append(npc_trace)
+                    continue
 
         def new_npc_overlap_with_other_elements(npc, new_position, new_rotation):
             # should not overlap with other npcs
@@ -935,6 +942,7 @@ class Mutator(metaclass=abc.ABCMeta):
 
         def npc_speed_down(npc):
             LOG.info("mutation: speed down")
+            self.mutate_choice = 2
             npc_scenario = npc_index[npc["Id"]]
 
             if npc_scenario.behaviour.name == "NPCWaypointBehaviour":
@@ -958,6 +966,7 @@ class Mutator(metaclass=abc.ABCMeta):
 
         def npc_speed_up(npc):
             LOG.info("mutation: speed up")
+            self.mutate_choice = 1
             npc_scenario = npc_index[npc["Id"]]
 
             if npc_scenario.behaviour.name == "NPCWaypointBehaviour":
@@ -974,6 +983,7 @@ class Mutator(metaclass=abc.ABCMeta):
 
         def npc_position_forward(npc):
             LOG.info("mutation: position forward")
+            self.mutate_choice = 3
 
             if prob(50):
                 distance_to_add = np.array([random.uniform(0.5, 2), 0])
@@ -1016,6 +1026,7 @@ class Mutator(metaclass=abc.ABCMeta):
 
         def npc_position_backward(npc):
             LOG.info("mutation: position backward")
+            self.mutate_choice = 4
 
             if prob(50):
                 distance_to_sub = np.array([random.uniform(0.5, 2), 0])
@@ -1070,6 +1081,7 @@ class Mutator(metaclass=abc.ABCMeta):
 
         def new_npc(area=None):
             LOG.info("mutation: add new npc")
+            self.mutate_choice = 0
 
             center = area.centroid
             sim = lgsvl.Simulator(
