@@ -20,6 +20,7 @@ import utils.lawbreaker as _Lawbreaker
 import utils.avfuzzer as _AVFuzzer
 import utils.drivefuzz as _DriveFuzz
 import utils.able as _Able
+import utils.samota as _Samota
 
 from run_vse import VSERunner
 
@@ -154,6 +155,9 @@ class Fuzzer:
         elif self.strategy == "able":
             score = res
             mutator = trace_path
+        elif self.strategy == "samota":
+            score = res
+            mutator = trace_path
         else:
             LOG.error("Unknown strategy: {}".format(self.strategy))
             exit(-1)
@@ -283,6 +287,99 @@ class Fuzzer:
 
             factory.merge_newdata_into_dataset(batch_testdata)
 
+    def execute_samota(self):
+        from utils.samota.src.implementation.runner.lib.candidate import Candidate
+        # first initialize the seed queue of fuzzing by executing the initial seeds in the corpus
+        initial_scenario = None
+        for scenario in self.corpus:
+            initial_scenario = scenario
+            LOG.info(scenario.seed_path)
+            mutator, res = self.run_instance(scenario)
+            if res is not None:
+                initial_scenario = scenario
+                scenario.verified = True
+                scenario.score = res
+                self.population_add((scenario, mutator))
+                self.hashes.add(scenario.get_hash())
+
+        session = os.path.basename(os.path.dirname(os.path.abspath(self.workdir)))
+        LOG.info("Session: " + session)
+
+        # initial scenatio batch 
+        factory = _Samota.SamotaFactory(session=session, rule=self.rule)
+        random_scenario_batch = factory.prepare_databse_random()
+        LOG.info("Random batch")
+        random_scenario_batch_evaluated = []
+        for new_scenario_code in random_scenario_batch:
+            new_scenario_code = new_scenario_code.candidate_values
+            new_scenario_decoded = factory.decode_to_json(session,initial_scenario,new_scenario_code)
+            new_scenario_decoded.store(self.workdir + "/queue/" + str(new_scenario_decoded.get_hash()))
+            trace_path, res = self.run_instance(new_scenario_decoded)
+            if res is not None:
+                new_scenario_decoded.verified = True
+                new_scenario_decoded.score = res
+                self.population_add((new_scenario_decoded, trace_path))
+                self.hashes.add(new_scenario_decoded.get_hash())
+                new_scenario_candidate = Candidate(new_scenario_code)
+                new_scenario_evaluated = factory.evaulate_population_with_archive(trace_path,new_scenario_decoded, new_scenario_candidate)
+                if new_scenario_evaluated!= None:
+                    random_scenario_batch_evaluated.append(new_scenario_evaluated)
+   
+        # update database
+        factory.merge_newdata_into_dataset(random_scenario_batch_evaluated)
+        LOG.info("Length of database:"+str(len(factory.database)))
+        
+        # active learning
+        iteration = 0
+        while(True):
+            LOG.info("Iteration:"+str(iteration))
+            # global search
+            LOG.info("Global search")
+            T_g_sceario_batch = factory.Tg_databse()
+            Tg_scenario_batch_evaluated = []
+            for new_scenario_code in T_g_sceario_batch:
+                new_scenario_code = new_scenario_code.candidate_values
+                new_scenario_decoded = factory.decode_to_json(session,initial_scenario,new_scenario_code)
+                new_scenario_decoded.store(self.workdir + "/queue/" + str(new_scenario_decoded.get_hash()))
+                trace_path, res = self.run_instance(new_scenario_decoded)
+                if res is not None:
+                    new_scenario_decoded.verified = True
+                    new_scenario_decoded.score = res
+                    self.population_add((new_scenario_decoded, trace_path))
+                    self.hashes.add(new_scenario_decoded.get_hash())
+                    new_scenario_candidate = Candidate(new_scenario_code)
+                    new_scenario_evaluated = factory.evaulate_population_with_archive(trace_path,new_scenario_decoded, new_scenario_candidate)
+                    if new_scenario_evaluated!=None:
+                        Tg_scenario_batch_evaluated.append(new_scenario_evaluated)
+
+            # update database
+            factory.merge_newdata_into_dataset(Tg_scenario_batch_evaluated)
+            LOG.info("Length of database:"+str(len(factory.database)))
+
+            # local search
+            LOG.info("Local search")
+            T_l_scenario_batch = factory.Tl_databse()
+            Tl_scenario_batch_evaluated = []
+            for new_scenario_code in T_l_scenario_batch:
+                new_scenario_code = new_scenario_code.candidate_values
+                new_scenario_decoded = factory.decode_to_json(session,initial_scenario,new_scenario_code)
+                new_scenario_decoded.store(self.workdir + "/queue/" + str(new_scenario_decoded.get_hash()))
+                trace_path, res = self.run_instance(new_scenario_decoded)
+                if res is not None:
+                    new_scenario_decoded.verified = True
+                    new_scenario_decoded.score = res
+                    self.population_add((new_scenario_decoded, trace_path))
+                    self.hashes.add(new_scenario_decoded.get_hash())
+                    new_scenario_candidate = Candidate(new_scenario_code)
+                    new_scenario_evaluated = factory.evaulate_population_with_archive(trace_path,new_scenario_decoded, new_scenario_candidate)
+                    if new_scenario_evaluated!=None:
+                        Tl_scenario_batch_evaluated.append(new_scenario_evaluated)
+
+            # update database
+            factory.merge_newdata_into_dataset(Tl_scenario_batch_evaluated)    
+            LOG.info("Length of database:"+str(len(factory.database)))
+            iteration = iteration + 1         
+
 
 @click.command()
 @click.option(
@@ -309,7 +406,7 @@ class Fuzzer:
 @click.option(
     "-s",
     "--strategy",
-    type=click.Choice(["viohawk", "avfuzzer", "lawbreaker", "drivefuzz", "able"]),
+    type=click.Choice(["viohawk", "avfuzzer", "lawbreaker", "drivefuzz", "able", "samota"]),
     default="viohawk",
     help="The strategy for fuzzing.",
 )
@@ -328,6 +425,8 @@ def fuzz(input, output, map, strategy, rule):
     fuzzer = Fuzzer(input, output, map, strategy, rule)
     if strategy == "able":
         fuzzer.execute_able()
+    elif strategy == "samota":
+        fuzzer.execute_samota() 
     else:
         fuzzer.execute()
     LOG.info("Fuzzing End.")
