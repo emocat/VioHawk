@@ -3,7 +3,7 @@ import json
 import lgsvl
 import numpy as np
 
-from shapely.geometry import Polygon, LineString, Point
+from shapely.geometry import Polygon, LineString, Point, MultiPoint
 from shapely.ops import unary_union
 
 
@@ -180,25 +180,24 @@ def get_junction_area_ahead(position, rotation, map_info, dist: int = 60) -> Pol
         points = junction_list[key]
         the_area = Polygon(points)
         if ahead_area_polygon.distance(the_area) == 0:
-            res.append(key)
-            # print("junction: ", key)
+            res.append(the_area)
+
     if len(res) == 0:
         print("no junction ahead!")
         return Polygon()
     elif len(res) == 1:
-        return Polygon(map_info.areas["junction_areas"][res[0]])
+        return res[0]
     else:
-        print("multiple junctions!")
-        min_dis = 200
-        nearest_junction = Polygon()
-        for key in res:
-            points = junction_list[key]
-            the_area = Polygon(points)
-            dis = ahead_area_polygon.distance(the_area)
-            if dis < min_dis:
-                min_dis = dis
-                nearest_junction = the_area
-        return nearest_junction
+        print("multiple junctions! choosing the junction with the largest proportion...")
+        ratio = 0
+        best_junction = Polygon()
+        for junction in res:
+            tmp_ratio = junction.intersection(ahead_area_polygon).area / junction.area
+            if tmp_ratio > ratio:
+                ratio = tmp_ratio
+                best_junction = junction
+        return best_junction
+
 
 
 def get_crosswalk_area_ahead(position, rotation, osm_map_info, dist: int = 50) -> Polygon:
@@ -212,20 +211,26 @@ def get_crosswalk_area_ahead(position, rotation, osm_map_info, dist: int = 50) -
         for node in crosswalk:
             position = [node.position["x"], node.position["z"]]
             crosswalk_nodes.append(position)
-        crosswalk_area = Polygon(crosswalk_nodes)
+        crosswalk_area = MultiPoint(crosswalk_nodes).convex_hull
         dis = crosswalk_area.distance(ahead_area_polygon)
         if dis == 0:
-            return crosswalk_area
-        if dis < min_dis:
-            min_dis = dis
-            nearest_crosswalk = crosswalk_area
+            res.append(crosswalk_area)
 
-    if min_dis != -1:
-        return nearest_crosswalk
+    if len(res) == 0:
+        print("no crosswalk ahead!")
+        return Polygon()
+    elif len(res) == 1:
+        return res[0]
     else:
-        print("multiple crosswalks!")
-        # exit(-1)
-        return None
+        print("multiple crosswalks! choosing the crosswalk with the largest proportion...")
+        ratio = 0
+        best_crosswalk = Polygon()
+        for crosswalk in res:
+            tmp_ratio = crosswalk.intersection(ahead_area_polygon).area / crosswalk.area
+            if tmp_ratio > ratio:
+                ratio = tmp_ratio
+                best_crosswalk = crosswalk
+        return best_crosswalk
 
 
 def get_crosswalks_to_pass(route, osm_map_info) -> Polygon:
