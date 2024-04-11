@@ -1,0 +1,197 @@
+{
+    "ScenarioName": "pedestrian_at_crosswalk_Y_turning",
+    "MapVariable": "",
+    "map": "san_francisco",
+    "time": {
+        "hour": 0,
+        "minute": 31
+    },
+    "weather": {
+        "rain": 0,
+        "sunny": 0,
+        "wetness": 0,
+        "fog": 0
+    },
+    "ego": {
+        "ID": "ego_vehicle",
+        "name": "gt_sensors",
+        "groundTruthPerception": true,
+        "color": null,
+        "start": {
+            "lane_position": {
+                "lane": "lane_384",
+                "offset": 175.68122987300683,
+                "roadID": null
+            },
+            "heading": {
+                "ref_lane_point": {
+                    "lane": "lane_384",
+                    "offset": 175.68122987300683,
+                    "roadID": null
+                },
+                "ref_angle": 0.0
+            },
+            "speed": 0.0
+        },
+        "destination": {
+            "lane_position": {
+                "lane": "lane_638",
+                "offset": 8.135386417006773,
+                "roadID": null
+            },
+            "heading": {
+                "ref_lane_point": {
+                    "lane": "lane_638",
+                    "offset": 8.135386417006773,
+                    "roadID": null
+                },
+                "ref_angle": 0.0
+            },
+            "speed": 0.0
+        }
+    },
+    "npcList": [
+        {
+            "ID": "npc1",
+            "name": "Sedan",
+            "color": null,
+            "start": {
+                "lane_position": {
+                    "lane": "lane_384",
+                    "offset": 187.7893120512247,
+                    "roadID": null
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_384",
+                        "offset": 187.7893120512247,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0
+            },
+            "motion": [],
+            "destination": null
+        },
+        {
+            "ID": "npc2",
+            "name": "Sedan",
+            "color": null,
+            "start": {
+                "lane_position": {
+                    "lane": "lane_385",
+                    "offset": 187.870306806913,
+                    "roadID": null
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_385",
+                        "offset": 187.870306806913,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0
+            },
+            "motion": [],
+            "destination": null
+        },
+        {
+            "ID": "npc3",
+            "name": "Sedan",
+            "color": null,
+            "start": {
+                "lane_position": {
+                    "lane": "lane_386",
+                    "offset": 188.8348671885128,
+                    "roadID": null
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_386",
+                        "offset": 188.8348671885128,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0
+            },
+            "motion": [],
+            "destination": null
+        },
+        {
+            "ID": "npc4",
+            "name": "Sedan",
+            "color": null,
+            "start": {
+                "lane_position": {
+                    "lane": "lane_387",
+                    "offset": 189.4813237252609,
+                    "roadID": null
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_387",
+                        "offset": 189.4813237252609,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0
+            },
+            "motion": [],
+            "destination": null
+        }
+    ],
+    "pedestrianList": [
+        {
+            "ID": "ped0",
+            "name": "Bob",
+            "start": {
+                "position": {
+                    "x": -215.041122436523,
+                    "y": -436.118408203125,
+                    "z": 0
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_1230",
+                        "offset": 7.27822733661983,
+                        "roadID": null
+                    },
+                    "ref_angle": 90.0
+                },
+                "speed": 0.5
+            },
+            "motion": [],
+            "destination": {
+                "position": {
+                    "x": -218.512939453125,
+                    "y": -450.968078613281,
+                    "z": 0
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_1224",
+                        "offset": 8.402181469629243,
+                        "roadID": null
+                    },
+                    "ref_angle": 90.0
+                },
+                "speed": 0.5
+            },
+            "height": null,
+            "color": null,
+            "random_walk": false
+        }
+    ],
+    "obstacleList": [],
+    "AgentNames": [
+        "npc1",
+        "npc2",
+        "npc3",
+        "npc4",
+        "ped0"
+    ]
+}

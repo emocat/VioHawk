@@ -1,0 +1,4579 @@
+[
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_0",
+        "actions": [
+            "time+5",
+            "weather+rain+0.2",
+            "weather+wetness+0.8",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            1.003864705187683,
+            -0.0038572564000000087
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_1",
+        "actions": [
+            "time+4",
+            "weather+rain+0.5",
+            "weather+wetness+0.9",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            10.749693042715563,
+            -2.3748772
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_2",
+        "actions": [
+            "time+4",
+            "weather+rain+0.1",
+            "weather+wetness+0.2",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            11202.494081810133,
+            -9.323891718368271
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_3",
+        "actions": [
+            "time+9",
+            "weather+rain+0.5",
+            "weather+wetness+0.8",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            2.7455467866376884,
+            -1.0099802488
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_4",
+        "actions": [
+            "time+8",
+            "weather+rain+0.3",
+            "weather+wetness+0.9",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            65800.78311406403,
+            -11.094387018672132
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_5",
+        "actions": [
+            "time+5",
+            "weather+rain+0.7",
+            "weather+wetness+0.6",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            11.691511199862466,
+            -2.45886304
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_6",
+        "actions": [
+            "time+8",
+            "weather+rain+0.9",
+            "weather+wetness+0.8",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+5.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            24.731580754200042,
+            -3.2080810000000004
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_7",
+        "actions": [
+            "time+18",
+            "weather+rain+1.0",
+            "weather+wetness+0.6",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            25049.108670058806,
+            -10.128593523846375
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_8",
+        "actions": [
+            "time+11",
+            "weather+rain+0.4",
+            "weather+wetness+0.3",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+18.5",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            776.4116960894673,
+            -6.654682915696414
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_9",
+        "actions": [
+            "time+22",
+            "weather+rain+1.0",
+            "weather+wetness+0.1",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            30.3364480638262,
+            -3.4123498960000003
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_10",
+        "actions": [
+            "time+11",
+            "weather+rain+0.8",
+            "weather+wetness+0.2",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            5.2352391176326005,
+            -1.65541252
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_11",
+        "actions": [
+            "time+23",
+            "weather+rain+0.4",
+            "weather+wetness+0.2",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            15.785563818542034,
+            -2.75909584
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_12",
+        "actions": [
+            "time+1",
+            "weather+rain+0.5",
+            "weather+wetness+0.1",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            1401.4847649301198,
+            -7.2452875
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_13",
+        "actions": [
+            "time+10",
+            "weather+rain+0.3",
+            "weather+wetness+0.5",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            371.27913754246725,
+            -5.9169541720000005
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_14",
+        "actions": [
+            "time+0",
+            "weather+rain+0.7",
+            "weather+wetness+0.2",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            5.012761902785618,
+            -1.6119870412000004
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_15",
+        "actions": [
+            "time+8",
+            "weather+rain+0.5",
+            "weather+wetness+0.7",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            1.649608151880533,
+            -0.500537776
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_16",
+        "actions": [
+            "time+4",
+            "weather+rain+0.8",
+            "weather+wetness+0.8",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            0.87722447881667,
+            0.13099235719999996
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_17",
+        "actions": [
+            "time+17",
+            "weather+rain+0.8",
+            "weather+wetness+0.2",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+5.5"
+        ],
+        "robustness": [
+            550.3171563840699,
+            -6.31049476
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_18",
+        "actions": [
+            "time+20",
+            "weather+rain+0.6",
+            "weather+wetness+0.6",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            94.18944514391148,
+            -4.545308128
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_19",
+        "actions": [
+            "time+9",
+            "weather+rain+0.8",
+            "weather+wetness+0.1",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            2.5794884405059277,
+            -0.9475911003999999
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_20",
+        "actions": [
+            "time+21",
+            "weather+rain+0.1",
+            "weather+wetness+0.2",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            71.86094153849731,
+            -4.2747328840000005
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_21",
+        "actions": [
+            "time+4",
+            "weather+rain+0.9",
+            "weather+wetness+0.8",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+18.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            94.47797022396107,
+            -4.548366688000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_22",
+        "actions": [
+            "time+3",
+            "weather+rain+0.3",
+            "weather+wetness+0.2",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+3.5"
+        ],
+        "robustness": [
+            5938.25806044524,
+            -8.689171113531495
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_23",
+        "actions": [
+            "time+4",
+            "weather+rain+0.2",
+            "weather+wetness+0.5",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+5.0"
+        ],
+        "robustness": [
+            6842.057046386032,
+            -8.830843703179792
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_24",
+        "actions": [
+            "time+13",
+            "weather+rain+0.3",
+            "weather+wetness+0.5",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            547.185968708774,
+            -6.304788724
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_25",
+        "actions": [
+            "time+16",
+            "weather+rain+0.1",
+            "weather+wetness+0.2",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+18.5",
+            "npc2+start+speed+5.5"
+        ],
+        "robustness": [
+            1236.5347849020688,
+            -7.120068218310276
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_26",
+        "actions": [
+            "time+6",
+            "weather+rain+0.6",
+            "weather+wetness+0.8",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            1.036877216879928,
+            -0.03621352
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_27",
+        "actions": [
+            "time+3",
+            "weather+rain+0.3",
+            "weather+wetness+0.6",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            2455.3228341998756,
+            -7.806013532275577
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_28",
+        "actions": [
+            "time+7",
+            "weather+rain+0.3",
+            "weather+wetness+0.3",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            7848.395903422674,
+            -8.968064446382439
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_29",
+        "actions": [
+            "time+17",
+            "weather+rain+1.0",
+            "weather+wetness+0.8",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            13.438924640146238,
+            -2.59815532
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_30",
+        "actions": [
+            "time+5",
+            "weather+rain+0.9",
+            "weather+wetness+0.3",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            12.009746893215485,
+            -2.4857185612
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_31",
+        "actions": [
+            "time+19",
+            "weather+rain+0.9",
+            "weather+wetness+0.3",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+5.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            0.7938044696091954,
+            0.230918108
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_32",
+        "actions": [
+            "time+16",
+            "weather+rain+0.1",
+            "weather+wetness+0.2",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            27649.303662645463,
+            -10.227355822642236
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_33",
+        "actions": [
+            "time+4",
+            "weather+rain+0.3",
+            "weather+wetness+0.6",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            27.141117040068732,
+            -3.3010498120000005
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_34",
+        "actions": [
+            "time+9",
+            "weather+rain+0.6",
+            "weather+wetness+0.1",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            358.447308447383,
+            -5.8817816714058075
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_35",
+        "actions": [
+            "time+21",
+            "weather+rain+0.6",
+            "weather+wetness+0.3",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+5.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            1.1077644780575984,
+            -0.10234400080000006
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_36",
+        "actions": [
+            "time+23",
+            "weather+rain+0.9",
+            "weather+wetness+0.3",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            41.738418015148575,
+            -3.7314220000000002
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_37",
+        "actions": [
+            "time+19",
+            "weather+rain+0.5",
+            "weather+wetness+0.5",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.5",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            44.7267394161416,
+            -3.80057152
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_38",
+        "actions": [
+            "time+10",
+            "weather+rain+0.8",
+            "weather+wetness+0.7",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.0",
+            "npc2+start+speed+5.0"
+        ],
+        "robustness": [
+            11.507822252380242,
+            -2.4430270000000003
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_39",
+        "actions": [
+            "time+21",
+            "weather+rain+0.7",
+            "weather+wetness+0.7",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            21893.268369556106,
+            -9.993934488167993
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_40",
+        "actions": [
+            "time+20",
+            "weather+rain+0.8",
+            "weather+wetness+0.7",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            40272.38628257529,
+            -10.603421309168967
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_41",
+        "actions": [
+            "time+18",
+            "weather+rain+0.7",
+            "weather+wetness+0.6",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            46.25271532662741,
+            -3.8341201720000004
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_42",
+        "actions": [
+            "time+0",
+            "weather+rain+0.7",
+            "weather+wetness+0.5",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            8.500698440575377,
+            -2.1401483296
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_43",
+        "actions": [
+            "time+14",
+            "weather+rain+0.1",
+            "weather+wetness+0.2",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            13.024396700668827,
+            -2.566824268
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_44",
+        "actions": [
+            "time+6",
+            "weather+rain+0.3",
+            "weather+wetness+0.3",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            1319.709035986767,
+            -7.185166564
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_45",
+        "actions": [
+            "time+2",
+            "weather+rain+0.4",
+            "weather+wetness+0.9",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+18.5",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            3.4450520472270942,
+            -1.2369390124
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_46",
+        "actions": [
+            "time+0",
+            "weather+rain+0.3",
+            "weather+wetness+0.3",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            4.155059382407042,
+            -1.42432672
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_47",
+        "actions": [
+            "time+0",
+            "weather+rain+1.0",
+            "weather+wetness+0.9",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            32983.617142201736,
+            -10.403766266940087
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_48",
+        "actions": [
+            "time+15",
+            "weather+rain+0.7",
+            "weather+wetness+1.0",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            0.8998255235264742,
+            0.10555439719999998
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_49",
+        "actions": [
+            "time+2",
+            "weather+rain+0.7",
+            "weather+wetness+0.5",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            23.99949978886211,
+            -3.178032988
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_50",
+        "actions": [
+            "time+21",
+            "weather+rain+0.9",
+            "weather+wetness+0.7",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.5",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            7934.034043118387,
+            -8.978916891853876
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_51",
+        "actions": [
+            "time+15",
+            "weather+rain+0.1",
+            "weather+wetness+0.8",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+4.5"
+        ],
+        "robustness": [
+            22.27239457086153,
+            -3.1033480000000004
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_52",
+        "actions": [
+            "time+16",
+            "weather+rain+0.6",
+            "weather+wetness+0.3",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            1607.3038518707795,
+            -7.382313428057497
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_53",
+        "actions": [
+            "time+19",
+            "weather+rain+0.7",
+            "weather+wetness+0.2",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            993.8627672414926,
+            -6.901599136000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_54",
+        "actions": [
+            "time+13",
+            "weather+rain+0.7",
+            "weather+wetness+0.2",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            118.32686294803999,
+            -4.77345082
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_55",
+        "actions": [
+            "time+19",
+            "weather+rain+0.4",
+            "weather+wetness+0.2",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+5.0"
+        ],
+        "robustness": [
+            181.76849356464476,
+            -5.202733864
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_56",
+        "actions": [
+            "time+23",
+            "weather+rain+0.1",
+            "weather+wetness+0.5",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+18.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            10.553379833693983,
+            -2.356446172
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_57",
+        "actions": [
+            "time+19",
+            "weather+rain+0.2",
+            "weather+wetness+1.0",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            4059.9285881174183,
+            -8.308920663307447
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_58",
+        "actions": [
+            "time+21",
+            "weather+rain+0.9",
+            "weather+wetness+0.8",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            113.77345108876311,
+            -4.7342092000000005
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_59",
+        "actions": [
+            "time+0",
+            "weather+rain+0.6",
+            "weather+wetness+0.5",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            10114.558782386863,
+            -9.22173112852064
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_60",
+        "actions": [
+            "time+15",
+            "weather+rain+0.6",
+            "weather+wetness+0.2",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            370.9527885768299,
+            -5.9160748000000005
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_61",
+        "actions": [
+            "time+21",
+            "weather+rain+0.3",
+            "weather+wetness+0.2",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+4.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            2.8279141024042773,
+            -1.0395393736
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_62",
+        "actions": [
+            "time+15",
+            "weather+rain+0.6",
+            "weather+wetness+0.2",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            21668.095275938937,
+            -9.98359619384856
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_63",
+        "actions": [
+            "time+12",
+            "weather+rain+0.6",
+            "weather+wetness+0.9",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            360.81000721957906,
+            -5.888351524
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_64",
+        "actions": [
+            "time+15",
+            "weather+rain+0.5",
+            "weather+wetness+0.9",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            0.8419693793237187,
+            0.17201163199999997
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_65",
+        "actions": [
+            "time+3",
+            "weather+rain+0.6",
+            "weather+wetness+0.9",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            31.25529894350975,
+            -3.4421889280000006
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_66",
+        "actions": [
+            "time+5",
+            "weather+rain+0.4",
+            "weather+wetness+0.7",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            5.398073826814253,
+            -1.6860421912000003
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_67",
+        "actions": [
+            "time+7",
+            "weather+rain+0.0",
+            "weather+wetness+0.8",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            0.7192634577181031,
+            0.32952756596
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_68",
+        "actions": [
+            "time+23",
+            "weather+rain+0.5",
+            "weather+wetness+0.0",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+3.5"
+        ],
+        "robustness": [
+            64.13617055448442,
+            -4.161008488
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_69",
+        "actions": [
+            "time+8",
+            "weather+rain+0.6",
+            "weather+wetness+0.6",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+17.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+18.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            21.837738531001158,
+            -3.0836395984
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_70",
+        "actions": [
+            "time+19",
+            "weather+rain+0.1",
+            "weather+wetness+0.6",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            3283.9637259225983,
+            -8.09680642481174
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_71",
+        "actions": [
+            "time+10",
+            "weather+rain+0.5",
+            "weather+wetness+0.6",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            1.071081479353959,
+            -0.06866886640000003
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_72",
+        "actions": [
+            "time+0",
+            "weather+rain+0.9",
+            "weather+wetness+0.6",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            176.80583764278606,
+            -5.175052168
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_73",
+        "actions": [
+            "time+21",
+            "weather+rain+1.0",
+            "weather+wetness+0.7",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            28.896149530408607,
+            -3.3637083519999997
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_74",
+        "actions": [
+            "time+16",
+            "weather+rain+0.1",
+            "weather+wetness+0.8",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            1695.6644009952693,
+            -7.43582992
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_75",
+        "actions": [
+            "time+10",
+            "weather+rain+0.3",
+            "weather+wetness+0.4",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+5.0"
+        ],
+        "robustness": [
+            2.092888795451681,
+            -0.7385453103999999
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_76",
+        "actions": [
+            "time+9",
+            "weather+rain+0.2",
+            "weather+wetness+0.9",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+4.5"
+        ],
+        "robustness": [
+            6192.540730483123,
+            -8.731100738731165
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_77",
+        "actions": [
+            "time+17",
+            "weather+rain+0.3",
+            "weather+wetness+0.6",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+4.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+5.0"
+        ],
+        "robustness": [
+            13.077604146190165,
+            -2.57090116
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_78",
+        "actions": [
+            "time+22",
+            "weather+rain+0.1",
+            "weather+wetness+0.5",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            2579.980198193579,
+            -7.855537002767441
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_79",
+        "actions": [
+            "time+5",
+            "weather+rain+0.3",
+            "weather+wetness+0.4",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            35348.70282629856,
+            -10.473016975497222
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_80",
+        "actions": [
+            "time+16",
+            "weather+rain+0.7",
+            "weather+wetness+0.0",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+18.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            22927.533496133492,
+            -10.040093803390858
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_81",
+        "actions": [
+            "time+13",
+            "weather+rain+0.9",
+            "weather+wetness+0.7",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+17.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            398357.2678716359,
+            -12.89510453958154
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_82",
+        "actions": [
+            "time+7",
+            "weather+rain+0.6",
+            "weather+wetness+0.5",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+5.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            39.21464068775266,
+            -3.6690501639999997
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_83",
+        "actions": [
+            "time+5",
+            "weather+rain+0.3",
+            "weather+wetness+0.2",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+18.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            139523.44048540367,
+            -11.845987898281168
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_84",
+        "actions": [
+            "time+14",
+            "weather+rain+0.2",
+            "weather+wetness+0.8",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            7694.97334896588,
+            -8.948322582844744
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_85",
+        "actions": [
+            "time+14",
+            "weather+rain+0.9",
+            "weather+wetness+0.2",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            117.44289318574971,
+            -4.7659522
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_86",
+        "actions": [
+            "time+14",
+            "weather+rain+1.0",
+            "weather+wetness+0.3",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+17.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            273.66015873607364,
+            -5.61188704
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_87",
+        "actions": [
+            "time+1",
+            "weather+rain+0.5",
+            "weather+wetness+0.5",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+5.0"
+        ],
+        "robustness": [
+            8624.16025528087,
+            -9.062322875453036
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_88",
+        "actions": [
+            "time+20",
+            "weather+rain+0.7",
+            "weather+wetness+0.9",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            0.7556748500238368,
+            0.28014408788
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_89",
+        "actions": [
+            "time+1",
+            "weather+rain+0.4",
+            "weather+wetness+0.3",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            7.346494641950722,
+            -1.99422328
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_90",
+        "actions": [
+            "time+17",
+            "weather+rain+0.8",
+            "weather+wetness+0.2",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+3.5"
+        ],
+        "robustness": [
+            97.43073545924466,
+            -4.579141720000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_91",
+        "actions": [
+            "time+16",
+            "weather+rain+0.7",
+            "weather+wetness+0.7",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            30.04534246129463,
+            -3.4027076560000005
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_92",
+        "actions": [
+            "time+4",
+            "weather+rain+0.5",
+            "weather+wetness+0.7",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            4024.5761601794065,
+            -8.300174882489257
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_93",
+        "actions": [
+            "time+8",
+            "weather+rain+0.5",
+            "weather+wetness+0.1",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            38.71429981308699,
+            -3.656209036
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_94",
+        "actions": [
+            "time+1",
+            "weather+rain+0.5",
+            "weather+wetness+0.5",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            45.56000449776794,
+            -3.8190302373008365
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_95",
+        "actions": [
+            "time+8",
+            "weather+rain+0.7",
+            "weather+wetness+0.2",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            0.9135197460311931,
+            0.09045028760000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_96",
+        "actions": [
+            "time+4",
+            "weather+rain+0.5",
+            "weather+wetness+0.4",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+6.0"
+        ],
+        "robustness": [
+            3219.148030284298,
+            -8.076872016660943
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_97",
+        "actions": [
+            "time+23",
+            "weather+rain+1.0",
+            "weather+wetness+0.0",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            1318.6191901484488,
+            -7.184340400000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_98",
+        "actions": [
+            "time+4",
+            "weather+rain+0.7",
+            "weather+wetness+0.9",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+5.0"
+        ],
+        "robustness": [
+            223.33809223392694,
+            -5.408686732
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_99",
+        "actions": [
+            "time+21",
+            "weather+rain+0.3",
+            "weather+wetness+0.1",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            12.096482646836785,
+            -2.4929147200000004
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_100",
+        "actions": [
+            "time+20",
+            "weather+rain+0.3",
+            "weather+wetness+0.0",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+18.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            1.6727515745924508,
+            -0.51446992
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_101",
+        "actions": [
+            "time+14",
+            "weather+rain+0.9",
+            "weather+wetness+0.2",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+3.5"
+        ],
+        "robustness": [
+            3.004954059949718,
+            -1.1002622800000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_102",
+        "actions": [
+            "time+1",
+            "weather+rain+0.0",
+            "weather+wetness+0.2",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            235.86226411076913,
+            -5.463248008
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_103",
+        "actions": [
+            "time+2",
+            "weather+rain+0.1",
+            "weather+wetness+0.0",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.0",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            374.3878169962953,
+            -5.925292204
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_104",
+        "actions": [
+            "time+12",
+            "weather+rain+0.6",
+            "weather+wetness+0.8",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            106.55183709290715,
+            -4.6686316
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_105",
+        "actions": [
+            "time+2",
+            "weather+rain+0.6",
+            "weather+wetness+0.9",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            2.133061353024261,
+            -0.7575582027999999
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_106",
+        "actions": [
+            "time+2",
+            "weather+rain+0.0",
+            "weather+wetness+0.5",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            42.3292579390496,
+            -3.745478524
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_107",
+        "actions": [
+            "time+9",
+            "weather+rain+0.1",
+            "weather+wetness+0.1",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            1.9710822551520977,
+            -0.6785827600000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_108",
+        "actions": [
+            "time+1",
+            "weather+rain+0.7",
+            "weather+wetness+0.9",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            309.52412986014286,
+            -5.735036053092539
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_109",
+        "actions": [
+            "time+11",
+            "weather+rain+0.1",
+            "weather+wetness+0.6",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            6657.81769629054,
+            -8.803547036608183
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_110",
+        "actions": [
+            "time+10",
+            "weather+rain+0.5",
+            "weather+wetness+0.8",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            140.02019693140036,
+            -4.941786676
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_111",
+        "actions": [
+            "time+4",
+            "weather+rain+0.8",
+            "weather+wetness+0.2",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            8455.05566969592,
+            -9.042519845544703
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_112",
+        "actions": [
+            "time+12",
+            "weather+rain+0.2",
+            "weather+wetness+0.7",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            2.0883521190622565,
+            -0.7363752952
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_113",
+        "actions": [
+            "time+16",
+            "weather+rain+0.2",
+            "weather+wetness+0.8",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            1.1330776131062468,
+            -0.12493748199999999
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_114",
+        "actions": [
+            "time+17",
+            "weather+rain+0.2",
+            "weather+wetness+0.7",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+4.5"
+        ],
+        "robustness": [
+            26.31566728302707,
+            -3.270164476
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_115",
+        "actions": [
+            "time+5",
+            "weather+rain+0.1",
+            "weather+wetness+0.4",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+5.5"
+        ],
+        "robustness": [
+            1154.276880797277,
+            -7.051229349655909
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_116",
+        "actions": [
+            "time+23",
+            "weather+rain+0.5",
+            "weather+wetness+0.3",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            12845.220020543498,
+            -9.460727038283506
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_117",
+        "actions": [
+            "time+23",
+            "weather+rain+0.9",
+            "weather+wetness+0.7",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            4465.835932727442,
+            -8.404211694763225
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_118",
+        "actions": [
+            "time+20",
+            "weather+rain+0.6",
+            "weather+wetness+0.7",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            6.131759133580101,
+            -1.8134816800000002
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_119",
+        "actions": [
+            "time+20",
+            "weather+rain+0.7",
+            "weather+wetness+0.0",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+18.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            11.142737272719947,
+            -2.41078792
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_120",
+        "actions": [
+            "time+16",
+            "weather+rain+0.0",
+            "weather+wetness+0.1",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            29121.20166488228,
+            -10.27922176742357
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_121",
+        "actions": [
+            "time+17",
+            "weather+rain+0.6",
+            "weather+wetness+0.4",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.5",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            77.29550192070846,
+            -4.347635764
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_122",
+        "actions": [
+            "time+20",
+            "weather+rain+0.5",
+            "weather+wetness+0.6",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            13.367642393497178,
+            -2.59283704
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_123",
+        "actions": [
+            "time+16",
+            "weather+rain+0.9",
+            "weather+wetness+0.1",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+5.5"
+        ],
+        "robustness": [
+            351.5411591049591,
+            -5.8623268
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_124",
+        "actions": [
+            "time+14",
+            "weather+rain+1.0",
+            "weather+wetness+0.9",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+18.5",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            256.2753129966741,
+            -5.546252308000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_125",
+        "actions": [
+            "time+18",
+            "weather+rain+0.7",
+            "weather+wetness+0.6",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            56.11504890602721,
+            -4.027404028
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_126",
+        "actions": [
+            "time+18",
+            "weather+rain+0.4",
+            "weather+wetness+1.0",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            1733.0546281469972,
+            -7.457640811519422
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_127",
+        "actions": [
+            "time+16",
+            "weather+rain+0.2",
+            "weather+wetness+0.4",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            0.6306908015046924,
+            0.46093955
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_128",
+        "actions": [
+            "time+1",
+            "weather+rain+0.0",
+            "weather+wetness+0.7",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            1432.301502790261,
+            -7.267037872000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_129",
+        "actions": [
+            "time+22",
+            "weather+rain+0.8",
+            "weather+wetness+0.0",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.5",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            1512.8446715144923,
+            -7.321747045936892
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_130",
+        "actions": [
+            "time+5",
+            "weather+rain+1.0",
+            "weather+wetness+0.9",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+17.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            87.88686898980517,
+            -4.476050407750453
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_131",
+        "actions": [
+            "time+14",
+            "weather+rain+0.1",
+            "weather+wetness+0.8",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            4.342208805478149,
+            -1.4683831600000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_132",
+        "actions": [
+            "time+9",
+            "weather+rain+0.9",
+            "weather+wetness+0.5",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+5.5"
+        ],
+        "robustness": [
+            11.45642559580462,
+            -2.43855076
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_133",
+        "actions": [
+            "time+4",
+            "weather+rain+0.4",
+            "weather+wetness+1.0",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            1169.2198938300382,
+            -7.064092048000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_134",
+        "actions": [
+            "time+13",
+            "weather+rain+0.5",
+            "weather+wetness+0.7",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+4.5"
+        ],
+        "robustness": [
+            29973.789363033757,
+            -10.308078590857695
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_135",
+        "actions": [
+            "time+19",
+            "weather+rain+0.1",
+            "weather+wetness+0.9",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            0.6651732566128737,
+            0.407707736
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_136",
+        "actions": [
+            "time+6",
+            "weather+rain+0.7",
+            "weather+wetness+0.8",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            3.561237840344705,
+            -1.2701081923895305
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_137",
+        "actions": [
+            "time+12",
+            "weather+rain+0.7",
+            "weather+wetness+0.1",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            6599.383442855316,
+            -8.794731505901613
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_138",
+        "actions": [
+            "time+7",
+            "weather+rain+0.5",
+            "weather+wetness+0.7",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            50.43600575923773,
+            -3.9207053199999997
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_139",
+        "actions": [
+            "time+6",
+            "weather+rain+0.7",
+            "weather+wetness+0.2",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.5",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            88.3495940533825,
+            -4.4813016039999995
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_140",
+        "actions": [
+            "time+22",
+            "weather+rain+0.5",
+            "weather+wetness+0.2",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            0.92163891799952,
+            0.08160176120000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_141",
+        "actions": [
+            "time+2",
+            "weather+rain+0.0",
+            "weather+wetness+0.6",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            22.6086888775624,
+            -3.118334296
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_142",
+        "actions": [
+            "time+10",
+            "weather+rain+0.9",
+            "weather+wetness+0.3",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+18.5",
+            "npc2+start+speed+5.5"
+        ],
+        "robustness": [
+            5.891461098933365,
+            -1.773504031235662
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_143",
+        "actions": [
+            "time+0",
+            "weather+rain+0.9",
+            "weather+wetness+0.7",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.0",
+            "npc2+start+speed+5.5"
+        ],
+        "robustness": [
+            305.0349487169026,
+            -5.720426356
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_144",
+        "actions": [
+            "time+12",
+            "weather+rain+0.5",
+            "weather+wetness+0.2",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            20251.471557435227,
+            -9.915982739397359
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_145",
+        "actions": [
+            "time+15",
+            "weather+rain+0.7",
+            "weather+wetness+0.1",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            0.9089359392140475,
+            0.09548066119999998
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_146",
+        "actions": [
+            "time+15",
+            "weather+rain+1.0",
+            "weather+wetness+1.0",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+24.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            2.178354728139474,
+            -0.77856988
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_147",
+        "actions": [
+            "time+22",
+            "weather+rain+0.8",
+            "weather+wetness+0.5",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+18.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            1517.4618764270724,
+            -7.324794400000001
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_148",
+        "actions": [
+            "time+19",
+            "weather+rain+0.2",
+            "weather+wetness+0.6",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            2.045806805486192,
+            -0.7157922375999999
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_149",
+        "actions": [
+            "time+5",
+            "weather+rain+0.9",
+            "weather+wetness+0.4",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            153.42973288518252,
+            -5.033242696
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_150",
+        "actions": [
+            "time+0",
+            "weather+rain+0",
+            "weather+wetness+0",
+            "weather+fog+0",
+            "ego+start+lane_position+lane_65+8.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_42+6.0",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            12428.520573818536,
+            -9.42774915681131
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_151",
+        "actions": [
+            "time+13",
+            "weather+rain+0.7",
+            "weather+wetness+0.4",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            1296.905145666263,
+            -7.167736048
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_152",
+        "actions": [
+            "time+20",
+            "weather+rain+0.6",
+            "weather+wetness+0.1",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            10.2238031241023,
+            -2.3247186412
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_153",
+        "actions": [
+            "time+9",
+            "weather+rain+0.9",
+            "weather+wetness+0.2",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            1809.6982921951321,
+            -7.500915420970696
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_154",
+        "actions": [
+            "time+16",
+            "weather+rain+0.2",
+            "weather+wetness+0.7",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            5684.152132124614,
+            -8.645437253834997
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_155",
+        "actions": [
+            "time+2",
+            "weather+rain+0.2",
+            "weather+wetness+0.2",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+3.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            4.691843802207542,
+            -1.54582564
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_156",
+        "actions": [
+            "time+2",
+            "weather+rain+0.1",
+            "weather+wetness+0.7",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            5825.326959356713,
+            -8.669970407220319
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_157",
+        "actions": [
+            "time+23",
+            "weather+rain+0.6",
+            "weather+wetness+0.8",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            3.1286481177827072,
+            -1.140601
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_158",
+        "actions": [
+            "time+15",
+            "weather+rain+0.2",
+            "weather+wetness+0.7",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            3002.6913699748998,
+            -8.007264288800599
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_159",
+        "actions": [
+            "time+5",
+            "weather+rain+0.9",
+            "weather+wetness+0.2",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+4.5"
+        ],
+        "robustness": [
+            11.914790257922435,
+            -2.4777805072000003
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_160",
+        "actions": [
+            "time+17",
+            "weather+rain+0.9",
+            "weather+wetness+0.4",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+3.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            3.897741177162386,
+            -1.3603972000000002
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_161",
+        "actions": [
+            "time+10",
+            "weather+rain+0.4",
+            "weather+wetness+0.9",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+5.0"
+        ],
+        "robustness": [
+            1.0312006069203214,
+            -0.030723761199999977
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_162",
+        "actions": [
+            "time+23",
+            "weather+rain+0.2",
+            "weather+wetness+0.3",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+23.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            16932.32555473173,
+            -9.73697982864306
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_163",
+        "actions": [
+            "time+5",
+            "weather+rain+0.4",
+            "weather+wetness+0.9",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            4.23715570992765,
+            -1.443892221011084
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_164",
+        "actions": [
+            "time+4",
+            "weather+rain+0.3",
+            "weather+wetness+0.9",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            16.677550272706195,
+            -2.81406352
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_165",
+        "actions": [
+            "time+3",
+            "weather+rain+0.7",
+            "weather+wetness+1.0",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            750.4963194129575,
+            -6.6207347468815545
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_166",
+        "actions": [
+            "time+10",
+            "weather+rain+0.7",
+            "weather+wetness+0.4",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            6.982025633183434,
+            -1.9433390799999999
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_167",
+        "actions": [
+            "time+6",
+            "weather+rain+0.1",
+            "weather+wetness+0.5",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            102.51005513799986,
+            -4.629960892674395
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_168",
+        "actions": [
+            "time+8",
+            "weather+rain+0.4",
+            "weather+wetness+0.4",
+            "weather+fog+0.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            5492.694662471787,
+            -8.611174245136745
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_169",
+        "actions": [
+            "time+2",
+            "weather+rain+0.1",
+            "weather+wetness+0.2",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            5677.7207135119625,
+            -8.644305148347295
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_170",
+        "actions": [
+            "time+22",
+            "weather+rain+0.6",
+            "weather+wetness+0.3",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            4879.100146099179,
+            -8.492716085552955
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_171",
+        "actions": [
+            "time+23",
+            "weather+rain+0.7",
+            "weather+wetness+0.4",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+5.5"
+        ],
+        "robustness": [
+            21.597736553294094,
+            -3.07258852
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_172",
+        "actions": [
+            "time+10",
+            "weather+rain+0.6",
+            "weather+wetness+1.0",
+            "weather+fog+0.7",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            20850.543237665614,
+            -9.945135281451831
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_173",
+        "actions": [
+            "time+22",
+            "weather+rain+0.2",
+            "weather+wetness+0.3",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            24565.77955881235,
+            -10.109109678632594
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_174",
+        "actions": [
+            "time+4",
+            "weather+rain+0.9",
+            "weather+wetness+0.7",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            5.769288715244231,
+            -1.7525488
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_175",
+        "actions": [
+            "time+20",
+            "weather+rain+1.0",
+            "weather+wetness+0.1",
+            "weather+fog+0.3",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            6.4439232826085675,
+            -1.8631375600000002
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_176",
+        "actions": [
+            "time+10",
+            "weather+rain+0.4",
+            "weather+wetness+0.1",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+5.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            1.2595932810032553,
+            -0.23078887599999998
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_177",
+        "actions": [
+            "time+18",
+            "weather+rain+0.9",
+            "weather+wetness+0.9",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+1.5"
+        ],
+        "robustness": [
+            2.456136035995622,
+            -0.8985893979999999
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_178",
+        "actions": [
+            "time+9",
+            "weather+rain+0.8",
+            "weather+wetness+0.7",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            77.64059081929311,
+            -4.352090368
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_179",
+        "actions": [
+            "time+17",
+            "weather+rain+0.3",
+            "weather+wetness+0.8",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+2.5"
+        ],
+        "robustness": [
+            12.268967931228724,
+            -2.5070731420008148
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_180",
+        "actions": [
+            "time+11",
+            "weather+rain+0.4",
+            "weather+wetness+0.1",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            17.540518719071613,
+            -2.8645135600000002
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_181",
+        "actions": [
+            "time+2",
+            "weather+rain+0.4",
+            "weather+wetness+0.0",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            12522.593655735223,
+            -9.435289784200428
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_182",
+        "actions": [
+            "time+9",
+            "weather+rain+0.5",
+            "weather+wetness+0.1",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.5",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            1508.2009203519985,
+            -7.318672776000424
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_183",
+        "actions": [
+            "time+7",
+            "weather+rain+0.3",
+            "weather+wetness+0.0",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+17.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            28.494732795460813,
+            -3.3497192559999998
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_184",
+        "actions": [
+            "time+8",
+            "weather+rain+0.6",
+            "weather+wetness+0.2",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            6385.6959298721285,
+            -8.761815757025547
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_185",
+        "actions": [
+            "time+23",
+            "weather+rain+0.9",
+            "weather+wetness+0.2",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            0.6467901457402047,
+            0.4357333868
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_186",
+        "actions": [
+            "time+1",
+            "weather+rain+0.5",
+            "weather+wetness+0.9",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+24.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            496.35465520649245,
+            -6.20729070187055
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_187",
+        "actions": [
+            "time+20",
+            "weather+rain+0.8",
+            "weather+wetness+0.9",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            10.52345525841314,
+            -2.3536066
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_188",
+        "actions": [
+            "time+19",
+            "weather+rain+0.3",
+            "weather+wetness+1.0",
+            "weather+fog+0.4",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+3.0"
+        ],
+        "robustness": [
+            20.33574794808584,
+            -3.01238032
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_189",
+        "actions": [
+            "time+15",
+            "weather+rain+0.6",
+            "weather+wetness+0.1",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.0",
+            "npc2+start+speed+4.5"
+        ],
+        "robustness": [
+            1509.2024205963403,
+            -7.319336591982548
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_190",
+        "actions": [
+            "time+10",
+            "weather+rain+0.4",
+            "weather+wetness+0.8",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.5",
+            "npc1+start+speed+2.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+18.0",
+            "npc2+start+speed+4.5"
+        ],
+        "robustness": [
+            113.184503327756,
+            -4.72901926
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_191",
+        "actions": [
+            "time+5",
+            "weather+rain+0.7",
+            "weather+wetness+0.9",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+4.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            5.418484505382977,
+            -1.6898161647999999
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_192",
+        "actions": [
+            "time+12",
+            "weather+rain+0.5",
+            "weather+wetness+0.9",
+            "weather+fog+1.0",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+19.5",
+            "npc1+start+speed+1.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            59.52315544568159,
+            -4.086365404
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_193",
+        "actions": [
+            "time+13",
+            "weather+rain+0.6",
+            "weather+wetness+0.8",
+            "weather+fog+0.2",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+2.0"
+        ],
+        "robustness": [
+            12.883891265154668,
+            -2.5559777919079334
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_194",
+        "actions": [
+            "time+5",
+            "weather+rain+0.4",
+            "weather+wetness+0.1",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.0",
+            "npc1+start+speed+1.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+22.5",
+            "npc2+start+speed+0.0"
+        ],
+        "robustness": [
+            11.396696811082471,
+            -2.4333235600000003
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_195",
+        "actions": [
+            "time+12",
+            "weather+rain+0.8",
+            "weather+wetness+0.5",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+23.5",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.5",
+            "npc2+start+speed+1.0"
+        ],
+        "robustness": [
+            1.4512759642122737,
+            -0.37244314480000007
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_196",
+        "actions": [
+            "time+22",
+            "weather+rain+0.5",
+            "weather+wetness+0.6",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+20.0",
+            "npc1+start+speed+0.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+19.0",
+            "npc2+start+speed+4.0"
+        ],
+        "robustness": [
+            17839.471664228087,
+            -9.78916879046161
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_197",
+        "actions": [
+            "time+17",
+            "weather+rain+0.4",
+            "weather+wetness+0.0",
+            "weather+fog+0.1",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+22.5",
+            "npc1+start+speed+2.0",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+21.0",
+            "npc2+start+speed+6.0"
+        ],
+        "robustness": [
+            964.8726464122124,
+            -6.87199612
+        ]
+    },
+    {
+        "ScenarioName": "park_near_crosswalk_T_straight_new_198",
+        "actions": [
+            "time+13",
+            "weather+rain+0.3",
+            "weather+wetness+0.5",
+            "weather+fog+0.8",
+            "ego+start+lane_position+lane_65+5.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_740+40.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_65+21.0",
+            "npc1+start+speed+0.5",
+            "npc2+name+Sedan",
+            "npc2+start+lane_position+lane_64+20.0",
+            "npc2+start+speed+0.5"
+        ],
+        "robustness": [
+            3.211914451175016,
+            -1.1668671616
+        ]
+    }
+]

@@ -1,0 +1,125 @@
+{
+    "ScenarioName": "pedestrian_at_crosswalk_turning_side_C_turning",
+    "MapVariable": "",
+    "map": "san_francisco",
+    "time": {
+        "hour": 0,
+        "minute": 31
+    },
+    "weather": {
+        "rain": 0,
+        "sunny": 0,
+        "wetness": 0,
+        "fog": 0
+    },
+    "ego": {
+        "ID": "ego_vehicle",
+        "name": "gt_sensors",
+        "groundTruthPerception": true,
+        "color": null,
+        "start": {
+            "lane_position": {
+                "lane": "lane_36",
+                "offset": 54.87817689175584,
+                "roadID": null
+            },
+            "heading": {
+                "ref_lane_point": {
+                    "lane": "lane_36",
+                    "offset": 54.87817689175584,
+                    "roadID": null
+                },
+                "ref_angle": 0.0
+            },
+            "speed": 0.0
+        },
+        "destination": {
+            "lane_position": {
+                "lane": "lane_47",
+                "offset": 9.382702728791095,
+                "roadID": null
+            },
+            "heading": {
+                "ref_lane_point": {
+                    "lane": "lane_47",
+                    "offset": 9.382702728791095,
+                    "roadID": null
+                },
+                "ref_angle": 0.0
+            },
+            "speed": 0.0
+        }
+    },
+    "npcList": [
+        {
+            "ID": "npc1",
+            "name": "Sedan",
+            "color": null,
+            "start": {
+                "lane_position": {
+                    "lane": "lane_36",
+                    "offset": 71.09966628346007,
+                    "roadID": null
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_36",
+                        "offset": 71.09966628346007,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0
+            },
+            "motion": [],
+            "destination": null
+        }
+    ],
+    "pedestrianList": [
+        {
+            "ID": "ped0",
+            "name": "Bob",
+            "start": {
+                "position": {
+                    "x": -176.206085205078,
+                    "y": 245.921752929688,
+                    "z": 0
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_785",
+                        "offset": 44.700612373894515,
+                        "roadID": null
+                    },
+                    "ref_angle": 90.0
+                },
+                "speed": 0.5
+            },
+            "motion": [],
+            "destination": {
+                "position": {
+                    "x": -176.280654907227,
+                    "y": 231.678527832031,
+                    "z": 0
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_784",
+                        "offset": 43.4898871079083,
+                        "roadID": null
+                    },
+                    "ref_angle": 90.0
+                },
+                "speed": 0.5
+            },
+            "height": null,
+            "color": null,
+            "random_walk": false
+        }
+    ],
+    "obstacleList": [],
+    "AgentNames": [
+        "npc1",
+        "ped0"
+    ]
+}

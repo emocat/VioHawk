@@ -1,0 +1,50 @@
+import json
+from numpy import *
+
+def set_space_double_direction():
+    space = dict()
+    space["time"] = linspace(0, 24, 12)
+    space["weather+rain+"] = linspace(0, 1, 3)
+    space["weather+wetness+"] = linspace(0, 1, 3)
+    space["weather+fog+"] = linspace(0, 1, 3)
+    space["ego+start+lane_position+lane_540+"] = linspace(0, 1, 3)
+    space["ego+start+speed+"] = linspace(0, 1, 3)
+    space["wego+destination+lane_position+lane_572+"] = linspace(0, 1, 3)
+    space["ego+destination+speed+"] = linspace(0, 1, 3)
+    space["npc1+start+lane_position+lane_574+"] = linspace(0, 1, 3)
+    space["npc1+start+speed+"] = linspace(0, 1, 3)
+    space["npc1motion+0+lane_position+lane_569+"] = linspace(0, 4, 4)
+    space["npc1motion+0+speed+0.5"] = linspace(0.1, 4, 4)
+    space["npc1+destination+lane_position+lane_569+"] = linspace(0, 1, 3)
+    space["npc1+destination+speed+"] = linspace(0.1, 4, 4)
+    space["npc2+start+lane_position+lane_564+"] = linspace(0, 1, 3)
+    space["npc2+start+speed+2.1"] = linspace(0, 4, 4)
+    space["npc2motion+0+lane_position+lane_568+"] = linspace(0, 1, 3)
+    space["npc2motion+0+speed+2.1"] = linspace(0.1, 4, 4)
+    space["npc2+destination+lane_position+lane_568+"] = linspace(0, 1, 3)
+    space["npc2+destination+speed+"] = linspace(0, 1, 3)
+    space["npc3+start+lane_position+lane_565+"] = linspace(0, 1, 3)
+    space["npc3+start+speed+"] = linspace(0, 1, 3)
+    space["npc3motion+0+lane_position+lane_569+"] = linspace(0, 1, 3)
+    space["npc3motion+0+speed+"] = linspace(0.1, 4, 4)
+    space["npc3+destination+lane_position+lane_569+"] = linspace(0, 1, 3)
+    space["npc3+destination+speed+"] = linspace(0, 1, 3)
+    space["npc4+start+lane_position+lane_570+"] = linspace(0, 1, 3)
+    space["npc4+start+speed+"] = linspace(0, 1, 3)
+    space["npc4motion+0+lane_position+lane_566+"] = linspace(0, 1, 3)
+    space["npc4motion+0+speed+"] = linspace(0.1, 4, 4)
+    space["npc4+destination+lane_position+lane_566+"] = linspace(0, 1, 3)
+    space["npc4+destination+speed+"] = linspace(0, 1, 3)
+    space["npc5+start+lane_position+lane_571+"] = linspace(0, 1, 3)
+    space["npc5+start+speed+"] = linspace(0, 1, 3)
+    space["npc5motion+0+lane_position+lane_567+"] = linspace(0, 1, 3)
+    space["npc5motion+0+speed+"] = linspace(0.1, 4, 4)
+    space["npc5+destination+lane_position+lane_567+"] = linspace(0, 1, 3)
+    space["npc5+destination+speed+"] = linspace(0, 1, 3)
+
+    path = "engines/gflownet/code/data/space_double_direction.json"
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(space, f, ensure_ascii=False, indent=4)
+
+if __name__ == "__main__":
+    set_space_double_direction()

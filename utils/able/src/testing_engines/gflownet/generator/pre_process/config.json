@@ -1,0 +1,14 @@
+{
+  "speed_range": [0, 10],
+  "speed_range_num": 5,
+  "weather_num": 10,
+  "ego_loc_offset": [0.0, 10, 5],
+  "npc1_loc_offset": [0.0, 10, 5],
+  "npc2_loc_offset": [0.0, 10, 5],
+  "npc3_loc_offset": [0.0, 10, 5],
+  "npc4_loc_offset": [0.0, 10, 5],
+  "npc5_loc_offset": [0.0, 10, 5],
+  "npc6_loc_offset": [0.0, 10, 5],
+  "npc7_loc_offset": [0.0, 10, 5],
+  "npc8_loc_offset": [0.0, 10, 5]
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "ScenarioName": "pedestrian_at_crosswalk_turning_side_temp_new_0",
+        "actions": [
+            "time+22",
+            "weather+rain+0.4",
+            "weather+wetness+0.4",
+            "weather+fog+0.9",
+            "ego+start+lane_position+lane_36+50.5",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_47+9.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_36+69.0",
+            "npc1+start+speed+4.5"
+        ],
+        "robustness": [
+            2.718281828459045,
+            -1.0
+        ]
+    }
+]

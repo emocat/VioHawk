@@ -1,0 +1,107 @@
+{
+    "ScenarioName": "red_light_C_straight",
+    "MapVariable": "",
+    "map": "san_francisco",
+    "time": {
+        "hour": 21,
+        "minute": 3
+    },
+    "weather": {
+        "rain": 0,
+        "sunny": 0,
+        "wetness": 0,
+        "fog": 0
+    },
+    "ego": {
+        "ID": "ego_vehicle",
+        "name": "gt_sensors",
+        "groundTruthPerception": true,
+        "color": null,
+        "start": {
+            "lane_position": {
+                "lane": "lane_37",
+                "offset": 39.366965341708834,
+                "roadID": null
+            },
+            "heading": {
+                "ref_lane_point": {
+                    "lane": "lane_37",
+                    "offset": 39.366965341708834,
+                    "roadID": null
+                },
+                "ref_angle": 0.0
+            },
+            "speed": 0.0
+        },
+        "destination": {
+            "lane_position": {
+                "lane": "lane_10",
+                "offset": 42.14432468646946,
+                "roadID": null
+            },
+            "heading": {
+                "ref_lane_point": {
+                    "lane": "lane_10",
+                    "offset": 42.14432468646946,
+                    "roadID": null
+                },
+                "ref_angle": 0.0
+            },
+            "speed": 0.0
+        }
+    },
+    "npcList": [
+        {
+            "ID": "npc1",
+            "name": "Sedan",
+            "color": null,
+            "start": {
+                "lane_position": {
+                    "lane": "lane_37",
+                    "offset": 70.57541757461449,
+                    "roadID": null
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_37",
+                        "offset": 70.57541757461449,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0.200000002980232
+            },
+            "motion": [],
+            "destination": null
+        },
+        {
+            "ID": "npc2",
+            "name": "Sedan",
+            "color": null,
+            "start": {
+                "lane_position": {
+                    "lane": "lane_36",
+                    "offset": 70.51570839381002,
+                    "roadID": null
+                },
+                "heading": {
+                    "ref_lane_point": {
+                        "lane": "lane_36",
+                        "offset": 70.51570839381002,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0
+            },
+            "motion": [],
+            "destination": null
+        }
+    ],
+    "pedestrianList": [],
+    "obstacleList": [],
+    "AgentNames": [
+        "npc1",
+        "npc2"
+    ]
+}

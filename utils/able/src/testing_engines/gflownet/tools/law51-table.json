@@ -1,0 +1,31 @@
+{
+    "law51_sub3": [
+        "eventually(((((trafficLightAheadcolor==3)and(direction==1))and(Time<=20.0))and(Time>=7.0))and(not(turnSignal==1)))",
+        "eventually((((trafficLightAheadcolor==3)and(direction==1))and(Time>=20.0))and(not(turnSignal==1)))",
+        "eventually((((trafficLightAheadcolor==3)and(direction==1))and(Time>=20.0))and(not(lowBeamOn==1)))",
+        "eventually((((trafficLightAheadcolor==3)and(direction==1))and(Time<=7.0))and(not(turnSignal==1)))",
+        "eventually((((trafficLightAheadcolor==3)and(direction==1))and(Time<=7.0))and(not(lowBeamOn==1)))"
+    ],
+    "law51_sub4": [
+        "eventually(((trafficLightAheadcolor==3)and(not(NPCAheadAhead<=8.0)))and(always[0,3](not(speed>0.5))))",
+        "eventually(((trafficLightAheadcolor==3)and(not(NPCAheadAhead<=8.0)))and(NPCAheadAhead<=0.5))",
+        "eventually(((trafficLightAheadcolor==3)and((not(NPCAheadAhead<=8.0))and(NPCAheadAhead<=8.0)))and(always[0,3](not(speed>0.5))))",
+        "eventually(((trafficLightAheadcolor==3)and((not(NPCAheadAhead<=8.0))and(NPCAheadAhead<=8.0)))and(NPCAheadAhead<=0.5))",
+        "eventually(((trafficLightAheadcolor==3)and((eventually[0,2](NPCAheadspeed>0.5))and(NPCAheadAhead<=8.0)))and(always[0,3](not(speed>0.5))))",
+        "eventually(((trafficLightAheadcolor==3)and((eventually[0,2](NPCAheadspeed>0.5))and(NPCAheadAhead<=8.0)))and(NPCAheadAhead<=0.5))"
+    ],
+    "law51_sub5": [
+        "eventually(((trafficLightAheadcolor==1)and(stoplineAhead<=2.0))and(always[0,2](not(speed<0.5))))",
+        "eventually(((trafficLightAheadcolor==1)and(junctionAhead<=2.0))and(always[0,2](not(speed<0.5))))",
+        "eventually(((trafficLightAheadcolor==1)and(NPCAheadAhead<=0.5))and(always[0,2](not(speed<0.5))))"
+    ],
+    "law51_sub6": [
+        "eventually((((direction==2)and(NPCAheadAhead<=2.0))and(eventually[0,2](NPCAheadspeed<0.5)))and(always[0,3](not(speed<0.5))))"
+    ],
+    "law51_sub7": [
+        "eventually(((direction==2)and(PriorityNPCAhead==1))and(always[0,2](not(speed<0.5))))",
+        "eventually(((direction==2)and(PriorityPedsAhead==1))and(always[0,2](not(speed<0.5))))",
+        "eventually(((direction==1)and(PriorityNPCAhead==1))and(always[0,2](not(speed<0.5))))",
+        "eventually(((direction==1)and(PriorityPedsAhead==1))and(always[0,2](not(speed<0.5))))"
+    ]
+}

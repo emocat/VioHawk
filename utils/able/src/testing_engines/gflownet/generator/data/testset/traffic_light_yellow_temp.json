@@ -1,0 +1,22 @@
+[
+    {
+        "ScenarioName": "traffic_light_yellow_temp_new_0",
+        "actions": [
+            "time+17",
+            "weather+rain+1.0",
+            "weather+wetness+0.4",
+            "weather+fog+0.6",
+            "ego+start+lane_position+lane_40+30.0",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_67+8.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_40+77.5",
+            "npc1+start+speed+5.5"
+        ],
+        "robustness": [
+            2.718281828459045,
+            -1.0
+        ]
+    }
+]

@@ -1,0 +1,1136 @@
+{
+    "version": "0.01",
+    "vseMetadata": {
+        "cameraSettings": {
+            "position": {
+                "x": -198.253784179688,
+                "y": 134.734313964844,
+                "z": -499.080322265625
+            },
+            "rotation": {
+                "x": 79.1999588012695,
+                "y": -0.000290803553070873,
+                "z": 6.9524067058957e-11
+            }
+        }
+    },
+    "map": {
+        "id": "5d272540-f689-4355-83c7-03bf11b6865f",
+        "name": "SanFrancisco",
+        "parameterType": "map"
+    },
+    "agents": [
+        {
+            "id": "73805704-1e46-4eb6-b5f9-ec2244d5951e",
+            "uid": "fbe0eecc-41fd-4184-91ed-66a4aea04111",
+            "variant": "Lincoln2017MKZ",
+            "type": 1,
+            "parameterType": "vehicle",
+            "transform": {
+                "position": {
+                    "x": -193.824722290039,
+                    "y": 10.2076635360718,
+                    "z": -508.242858886719
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 359.910858154297,
+                    "z": 0
+                }
+            },
+            "sensorsConfigurationId": "2e9095fa-c9b9-4f3f-8d7d-65fa2bb03921",
+            "destinationPoint": {
+                "position": {
+                    "x": -193.751373291016,
+                    "y": 10.2076683044434,
+                    "z": -418.8671875
+                },
+                "rotation": {
+                    "x": 5.66437192901503e-05,
+                    "y": 359.952026367188,
+                    "z": -1.59027735929476e-15
+                }
+            }
+        },
+        {
+            "uid": "04f41bfb-0f86-44a0-ae7c-233de987dfd5",
+            "variant": "SUV",
+            "type": 2,
+            "parameterType": "",
+            "transform": {
+                "position": {
+                    "x": -193.879699707031,
+                    "y": 10.2076635360718,
+                    "z": -472.978637695313
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 359.910705566406,
+                    "z": 0
+                }
+            },
+            "behaviour": {
+                "name": "NPCLaneFollowBehaviour",
+                "parameters": {
+                    "isLaneChange": false,
+                    "maxSpeed": 0
+                }
+            },
+            "color": {
+                "r": 0.0141509473323822,
+                "g": 0.249999731779099,
+                "b": 0.0235849004238844
+            },
+            "waypoints": []
+        }
+    ],
+    "controllables": [
+        {
+            "uid": "82464272-b7cf-46f7-b774-a93c2b68dd9a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "967680fb-896f-4251-a3dd-1690efd66c1e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8d5805a8-d6fe-41dd-9462-35259f311e62",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "04840b98-0292-46ec-8a71-fc33679f97b9",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ffaf212b-9ce6-4cf3-b665-097e2297ef83",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "796676c9-28a0-4ad3-9a8d-a2fdec2ee790",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "2cbe2f5f-2727-4b7d-a68f-8d225ea77d88",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8b2384bc-0754-4b9d-aad6-70011abd2fe5",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "9767b724-5747-4817-9819-6cfed7201cb2",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "d564d239-4819-4ac4-bb4f-bf108f8cd611",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8adeebb5-1934-442e-9ae1-abcab977719c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "20aad5d4-8a1f-477d-a974-e342843b863f",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "fb70556e-8595-43e3-bf7b-831e4550a98f",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "a28096d8-b071-44d1-ac4a-9f12983f3ba2",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "61a34311-2858-4a9b-bebb-841e22f1f9c2",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "0076ef22-5d93-4d74-bcf9-bcf9bcbaf14b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "21f1705a-578e-4fcf-aef8-92fff4d6d970",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "cc549ecb-2a95-497e-8b07-69bb5b1e7309",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "eeec2175-f598-4451-8ab1-0343fbef6402",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "eb060d1e-b6fd-4ad2-8f6c-220306dbc0b3",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "db52e72b-f4da-4910-a6f5-254f8d0ea159",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "77b0c50a-94ab-4057-bf5e-e72f6c65c6be",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "df6d59d8-3c2d-440a-94a6-0b9a9a3e69a1",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "680f93f2-00fe-4731-9536-dfcf048f2a18",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "c5be2bd9-21ce-4fed-8a3e-393abecb19de",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8d08f6b2-c027-4c5a-8266-1ec0e4383bcf",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "98180cb2-048c-45c9-ae37-1a412cc3892e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "31b32fdb-0cec-413e-88b3-e144c8181dd7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "4d01497c-25b4-4cdc-ae12-1294e7a0e426",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "547ef43c-7c32-4f72-9c05-558029f4115d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8408dc88-81e9-4d08-b2c4-46c6b54d2ec7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "12c9fed7-b83f-4256-8688-418675d88a2d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "b68dc875-aa13-4d81-a78f-664bc215c8b4",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "5566f309-a6c1-4f5b-8132-51212b281682",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "4bb06f8a-4fa9-494c-8fe8-d9b6f31bdc04",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "606e7ff7-754c-4f07-ac7c-82afe08b4d7a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "81a380bd-38aa-4e28-abec-2e38629fbb45",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "4ab70c53-b08d-4e1a-b1a0-ca67cc9ee284",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ec993962-63e8-4b0c-b061-4846881a880a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "05620216-7ee8-4104-9a82-321cba31e68a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "5ba7189d-472e-4d0b-8baa-d5f79ac0761b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "53bd7b70-640d-4165-8807-cd69b8a025d6",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "1600ae0a-037f-4ca6-8888-fa7bd8f6fae5",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "141d428e-0751-4467-afa6-a8f70ee48e1a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "373d8d97-db71-4701-9e27-31c5b29b7572",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "18267714-46b7-4010-878a-db3035769e13",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "cc409955-dc88-4230-b74d-3e6b93c81ff4",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "672815b7-c535-49c7-8663-a5f127f009dc",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "c79aeb6f-ba24-46b1-a8be-241688aa05c6",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "674b351a-7d27-48c8-9cb7-9376826efc9d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "3a9ca729-297d-4519-915f-99d2e2f7a64e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "cdd2bc3d-0ae3-4a2d-848f-73e1ad0d4a84",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "5232a35b-2fbb-4795-866f-6bbb9c31cf1b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "2d49c0a0-be59-4ddf-a218-fee011be1c8d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "10e6b0b3-80e2-48a2-8ccd-d8c261d23c2c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "647bbed9-ffd7-4b27-b7c3-d3c7e7f51e3c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "0c52b491-1fc1-451f-8843-000bf734d3a7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "347b1497-7d6e-428e-b91e-ae44e9c96189",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "d04f11ec-dd16-40b3-9d57-277153825b20",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "b348efb9-4b31-4927-ac47-b52853daf092",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "f50354d3-f508-450a-b679-fb68f32e5e82",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "f961ffbb-de35-4a2e-92da-bc99fd9139c7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "3e8ddbb1-d09b-42b8-a4ec-e12ae13cc748",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6dfcfa97-8e31-425c-9698-0cc24cdc13b2",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "29c9c382-8132-4140-bbac-e0fb707971eb",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "10bc4cae-4c75-45af-ba47-222f63c5213b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "f55ad50f-3ba1-4481-9eb1-b19d714fedf8",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "e7122696-8291-411b-ba50-f9ac82843d70",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "747cb80c-0641-4eb9-8f3f-8be3d02990fb",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "207f666f-df15-4a1d-9d5b-072c24ca772f",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "3ba33903-3a9a-4b34-a82a-131552a16727",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "4938f42f-14e9-4e36-95e5-9a936aa92ff6",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "d3e8561d-de8f-493d-8d10-601e74e329c1",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "c46ca37f-c8e4-4c2c-91da-046f55f52de9",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6652ebe9-3344-4783-8120-c3e3a7664b5b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "021a7741-64b5-4ec6-9cfe-8bb785556465",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "e84294ea-2c5a-4149-8eb8-2c09332fba33",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "a5b4d216-fcdb-48a1-8d73-0a7796d82ebc",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "308d28b3-75fd-4fd5-9f06-cd6fd916fa0d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "30459c96-e9d8-4616-be60-c049e5caef3e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "d2b1ffc4-a2d3-4097-a1eb-101efacfab31",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "c54cd6cb-eacc-409e-9f0a-9c39540f70f8",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "91d70564-e83b-487b-9808-9ac52bd2a505",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "97bf7105-1879-41bc-9661-ed16a86822d1",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "29743bb0-cef4-499f-8996-b49553adb396",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "dc6e601d-e1eb-4164-bfd4-d034324dfdae",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "aee0e26b-6f15-4fd0-9459-f33fcf7cfd1e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "2dcb59ff-c45b-493a-b5e5-a57eae7b2e7b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "2b8c43ca-723e-497c-9aeb-e9c292884e89",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "f636df1f-17e3-479e-b019-8a6b76905e29",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "53326345-a6ce-414b-9287-511ebc91df09",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ebc89f68-bd82-4a09-b042-29a90d41e6e2",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "7beb8467-b144-4912-82fc-eb2101a08489",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "13a1921e-afb9-41e2-9c3c-3842f1c4be98",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ffd284e2-ec31-4040-9d67-f504ae92510f",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "b12a18fc-15ce-4c39-92b6-a22930e7b20a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "4dde608d-7822-4bd1-af7e-ae4be97d383a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "545b9622-2923-4757-a175-b579377fdbc0",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "69de1104-6c42-4e48-94ad-605d9e150649",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "331f1ae8-98ee-4104-aa5e-64d0fa9df393",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "2e34614a-0f4d-4875-9f41-ce82bddb5db2",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "1cce8406-69e3-4ce4-a7c6-bd37c0ac8ab3",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ccd4b1d8-12a1-404a-9e63-ed3890d1af80",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8b66c85e-2d28-48da-a431-8e0ee1b70d46",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "fc9db476-5342-4e26-9e2c-d2d786f895df",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "40ec8352-1795-479e-af18-6a3b192e3826",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "1037a820-fcfa-4977-a4f5-1af34e385a0c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "bee15473-0376-4755-885b-c51cd756c35b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "45a326ca-fd63-4902-b4b8-d0e47f9bf2ef",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "a8185e3c-29cd-47cd-be24-9f0bef44ef33",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "4d3d1926-d55e-48d5-9d57-4cc4a247d57d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "a43e8fe8-d3b5-4bd0-8224-8e5f3007929d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ef64f30e-ec1a-4f17-b092-2b3f58626788",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "1a1c1473-7c49-4f6f-a4ec-3aaaf4d53c6e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ac7ee6f4-758c-49e5-927d-dd0318faad98",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "991c3204-a033-4363-aecc-2dd196231b68",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "acdecd03-ea41-49f6-8200-be19907a525c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "3c012bc4-f010-4149-87b1-d55b4c4b7f62",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "94cfda96-82ad-46cb-8521-741736d5dc0e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "d1796629-00f8-4ffa-b2e5-7869144116d7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "fca857f3-9986-4e80-8f49-4e0191424284",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "4b9a15a3-e16c-4c82-a6b9-9dfcbe162b77",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "b1874397-8800-4ddf-a064-f17ec200d9cc",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "1994f088-8ddb-483e-9277-28cf9bb37a9a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "059ce482-23a3-4e49-a6f6-527a26e51d66",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "78f1d83f-a875-48c7-bab6-9a37bb04623c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "9d0d93f4-64b2-44e4-9815-6fb163aaf37c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "e1c38658-ef3b-4e1e-8c6f-5317df34207a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "9fe87eef-577f-4b3f-a1ae-9c21624fdbc7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ac0048cc-e4cf-4f68-8c68-87f6ee7c800f",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "9fe226f8-5268-4a5a-997c-500f4e07ada7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "78fedab6-7029-4982-b5d3-57ce1c91de78",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "616144a3-1d65-4692-bc4e-472e7955d6a5",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "3ee4458a-0768-489f-a7dc-86e02c38b49d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ed4539e5-6b4a-4db8-907c-fbd75e0df0ef",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "48f015d2-753d-4341-8a9b-ee7bbf190c2c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "aa60feb9-6187-4148-92e6-68c9b253cb2d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "65f9c66e-bf2a-4df0-90a8-33a7a4f14870",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "19968f64-be8b-4d54-a17a-f4c4290b4c19",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "cf918669-1f3e-4dc1-8e74-5ad630eb3aa6",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "804d7d75-9742-44e6-867f-9919a9d04630",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "3ae22f66-6897-4b68-8eee-7f2791708600",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "7ca54b01-2d70-4cd2-bc2f-4258369d81f4",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8215b150-1f2f-475c-ae40-182d07cf9ee2",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "585f1bf8-f3d3-432e-96cc-1dc001a1711b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8ab54059-0f20-4e61-bc76-981f0e9bb95c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "a2f46fb1-20f4-481c-b192-00564f46bd27",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "819df2b9-7c47-4702-881c-87f68a525713",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "5be0532b-4dd5-457c-8f4a-e2631fe41f89",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6cd3b626-1a74-4d46-baea-2d05c57ca6db",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "44e002db-d434-41d6-b80f-ba9fda93b37e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "74a8c3e4-21bb-4e36-ac67-6decd1f131ce",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "d29d2849-1273-42d6-9d65-75cdeb21720e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "e0e2be13-d496-4406-9819-2f8a81f4f4ae",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ee2b70aa-fabf-4cda-9bb5-b368dd7c1a49",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "2085dded-4540-4289-8b86-265cff9aca9c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "c04e3564-48a2-4d6e-bacb-171c4532b54e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "3f879108-1b0a-411c-9971-29e86faae419",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "68c18f30-22f8-4428-bd84-fb9d69ffe075",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ab41633f-a017-46b9-8599-6a82b9872ba1",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "187f49cd-e481-44c4-aa68-6c0707bdf0be",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "7b3bbd1f-4c60-421f-a8d4-e856bdd01b1e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "204f08c8-d2f3-4676-a7ae-5d782bd85709",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ed25d2ad-8fa1-4bd8-92d2-04ebb640dee1",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "64599e94-c403-462f-9cea-a9fc39ce09a1",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "5aff34ee-7fd6-4b1e-a7ce-b79d6fc1bf23",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "796c6f41-984e-4ac3-9b7b-925e88bf4d10",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "28a4a1e8-1c47-4160-ad0e-68c95718e1a7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "b148e952-6454-4290-a8f6-c6d703af7da9",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "485ec7db-0e4b-45b0-9b9e-7e6e44fdaf25",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "9c7443e9-b353-42a0-ab5e-f166e3160889",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "e1e68050-d8ff-44a9-a5fa-c5c47976569c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "cd30ea01-94e3-4b7d-9f9a-0d0b7da08d31",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6fac7b55-3653-49f7-9abf-93c8257ff22c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "3cdcd049-232c-489f-8d03-a74540c44b10",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "84ccc5a9-9adf-41e8-95d7-d81138dc56ce",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "c50d541a-5423-4f0a-a33c-a56bebda8b7b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6f7d3ec1-f1a8-4247-abdf-fe52736185e4",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "942f24f5-3f8d-40c5-b6c7-340681028555",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "04a32a87-58d1-4fba-ab37-1798d03d7cb2",
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "9"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "3"
+                },
+                {
+                    "action": "state",
+                    "value": "red"
+                }
+            ],
+            "spawned": false
+        },
+        {
+            "uid": "73310664-a61d-4c7a-8557-366cb223be9a",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "fb8b5d44-de5e-4c1e-812a-c51dc1fa850b",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "c55b3dcf-2789-4366-87ad-c3e06c416b3c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "0256eb69-ef4b-44eb-8630-8ba190aefdf1",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "730f8190-7719-427d-be6a-5e025e25cfae",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "849a444a-ab55-4cda-a953-999837cbbf19",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "f83c3408-e20c-404d-adee-f4bb5f913f28",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "1539700d-62ae-427a-bf10-fc52b2b856ef",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "401c593a-99f1-4e11-b861-e421c3cae072",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6b3dbf73-c1e2-47fb-8343-3c959a64c073",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6d24e019-e3bf-4386-a9c4-f0b702e57cfe",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "72b856da-5300-4738-b31d-53d434d249b7",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "422cf807-2678-4383-855b-870faa3eff16",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "14a82769-aea2-4f34-920e-b8f3fdca1ac8",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "b1aaba81-f9f3-4502-90e4-423cf439c48d",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6ff86f5b-4e83-42bc-8716-17dd26b3105c",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6d73cf66-9b1d-4c4f-94aa-5a6b1c1b874e",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "8bf9978a-97c4-4094-9c56-6caea58a3147",
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "6"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "3"
+                },
+                {
+                    "action": "state",
+                    "value": "red"
+                }
+            ],
+            "spawned": false
+        },
+        {
+            "uid": "4a5ec788-fc36-4db3-90bc-596d28bb67c2",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "492260b2-2a87-46bf-8889-4ba3272d2131",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "ebc7cc3d-aea0-43aa-8184-822d33f9096e",
+            "policy": [],
+            "spawned": false
+        }
+    ]
+}

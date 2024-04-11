@@ -1,0 +1,414 @@
+{
+    "ScenarioName": "scenario0",
+    "MapVariable": "",
+    "map": "san_francisco",
+    "time":
+    {
+        "hour": 12,
+        "minute": 0
+    },
+    "weather":
+    {
+        "rain": 0.0,
+        "sunny": 0.1,
+        "wetness": 0.0,
+        "fog": 0.0
+    },
+    "ego":
+    {
+        "ID": "ego_vehicle",
+        "name": "gt_sensors",
+        "groundTruthPerception": true,
+        "color": null,
+        "start":
+        {
+            "lane_position":
+            {
+                "lane": "lane_540",
+                "offset": 50.0,
+                "roadID": null
+            },
+            "heading":
+            {
+                "ref_lane_point":
+                {
+                    "lane": "lane_540",
+                    "offset": 50.0,
+                    "roadID": null
+                },
+                "ref_angle": 0.0
+            },
+            "speed": 0.0
+        },
+        "destination":
+        {
+            "lane_position":
+            {
+                "lane": "lane_572",
+                "offset": 50.0,
+                "roadID": null
+            },
+            "heading":
+            {
+                "ref_lane_point":
+                {
+                    "lane": "lane_572",
+                    "offset": 50.0,
+                    "roadID": null
+                },
+                "ref_angle": 0.0
+            },
+            "speed": 0.0
+        }
+    },
+    "npcList":
+    [
+        {
+            "ID": "npc1",
+            "name": "Sedan",
+            "color": null,
+            "start":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_574",
+                    "offset": 100.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_574",
+                        "offset": 100.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 6.0
+            },
+            "motion":
+            [
+                {
+                    "lane_position":
+                    {
+                        "lane": "lane_569",
+                        "offset": 30.0,
+                        "roadID": null
+                    },
+                    "heading":
+                    {
+                        "ref_lane_point":
+                        {
+                            "lane": "lane_569",
+                            "offset": 30.0,
+                            "roadID": null
+                        },
+                        "ref_angle": 0.0
+                    },
+                    "speed": 0.0
+                }
+            ],
+            "destination":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_569",
+                    "offset": 30.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_569",
+                        "offset": 30.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0.0
+            }
+        },
+        {
+            "ID": "npc2",
+            "name": "Sedan",
+            "color": null,
+            "start":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_564",
+                    "offset": 10.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_564",
+                        "offset": 10.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 6.0
+            },
+            "motion":
+            [
+                {
+                    "lane_position":
+                    {
+                        "lane": "lane_568",
+                        "offset": 50.0,
+                        "roadID": null
+                    },
+                    "heading":
+                    {
+                        "ref_lane_point":
+                        {
+                            "lane": "lane_568",
+                            "offset": 50.0,
+                            "roadID": null
+                        },
+                        "ref_angle": 0.0
+                    },
+                    "speed": 0.0
+                }
+            ],
+            "destination":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_568",
+                    "offset": 50.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_568",
+                        "offset": 50.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0.0
+            }
+        },
+        {
+            "ID": "npc3",
+            "name": "Sedan",
+            "color": null,
+            "start":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_565",
+                    "offset": 10.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_565",
+                        "offset": 10.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 6.0
+            },
+            "motion":
+            [
+                {
+                    "lane_position":
+                    {
+                        "lane": "lane_569",
+                        "offset": 50.0,
+                        "roadID": null
+                    },
+                    "heading":
+                    {
+                        "ref_lane_point":
+                        {
+                            "lane": "lane_569",
+                            "offset": 50.0,
+                            "roadID": null
+                        },
+                        "ref_angle": 0.0
+                    },
+                    "speed": 0.0
+                }
+            ],
+            "destination":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_569",
+                    "offset": 50.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_569",
+                        "offset": 50.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0.0
+            }
+        },
+        {
+            "ID": "npc4",
+            "name": "Sedan",
+            "color": null,
+            "start":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_570",
+                    "offset": 10.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_570",
+                        "offset": 10.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 6.0
+            },
+            "motion":
+            [
+                {
+                    "lane_position":
+                    {
+                        "lane": "lane_566",
+                        "offset": 50.0,
+                        "roadID": null
+                    },
+                    "heading":
+                    {
+                        "ref_lane_point":
+                        {
+                            "lane": "lane_566",
+                            "offset": 50.0,
+                            "roadID": null
+                        },
+                        "ref_angle": 0.0
+                    },
+                    "speed": 0.0
+                }
+            ],
+            "destination":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_566",
+                    "offset": 50.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_566",
+                        "offset": 50.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0.0
+            }
+        },
+        {
+            "ID": "npc5",
+            "name": "Sedan",
+            "color": null,
+            "start":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_571",
+                    "offset": 74.8695068359375,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_571",
+                        "offset": 74.8695068359375,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 6.0
+            },
+            "motion":
+            [
+                {
+                    "lane_position":
+                    {
+                        "lane": "lane_567",
+                        "offset": 30.0,
+                        "roadID": null
+                    },
+                    "heading":
+                    {
+                        "ref_lane_point":
+                        {
+                            "lane": "lane_567",
+                            "offset": 30.0,
+                            "roadID": null
+                        },
+                        "ref_angle": 0.0
+                    },
+                    "speed": 0.0
+                }
+            ],
+            "destination":
+            {
+                "lane_position":
+                {
+                    "lane": "lane_567",
+                    "offset": 30.0,
+                    "roadID": null
+                },
+                "heading":
+                {
+                    "ref_lane_point":
+                    {
+                        "lane": "lane_567",
+                        "offset": 30.0,
+                        "roadID": null
+                    },
+                    "ref_angle": 0.0
+                },
+                "speed": 0.0
+            }
+        }
+    ],
+    "pedestrianList":
+    [],
+    "obstacleList":
+    [],
+    "AgentNames":
+    [
+        "npc1",
+        "npc2",
+        "npc3",
+        "npc4",
+        "npc5"
+    ]
+}

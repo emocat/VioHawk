@@ -1,0 +1,22 @@
+[
+    {
+        "ScenarioName": "park_near_signal_temp_new_0",
+        "actions": [
+            "time+8",
+            "weather+rain+0.7",
+            "weather+wetness+0.7",
+            "weather+fog+0.5",
+            "ego+start+lane_position+lane_55+147.5",
+            "ego+start+speed+0.0",
+            "ego+destination+lane_position+lane_43+12.5",
+            "ego+destination+speed+0.0",
+            "npc1+name+Sedan",
+            "npc1+start+lane_position+lane_739+34.0",
+            "npc1+start+speed+0.0"
+        ],
+        "robustness": [
+            0.6065302832345553,
+            0.500000620707608
+        ]
+    }
+]

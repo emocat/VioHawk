@@ -1,0 +1,109 @@
+{
+    "law38": [
+        "eventually(((((trafficLightAheadcolor==3)and(stoplineAhead<=2.0))and(not(PriorityNPCAhead==1)))and(not(PriorityPedsAhead==1)))and(always[0,2](not(speed>0.5))))",
+        "eventually(((((trafficLightAheadcolor==3)and(junctionAhead<=2.0))and(not(PriorityNPCAhead==1)))and(not(PriorityPedsAhead==1)))and(always[0,2](not(speed>0.5))))",
+        "eventually(((trafficLightAheadcolor==2)and(stoplineAhead<=0.0))and(always[0,2](not(speed>0.5))))",
+        "eventually(((trafficLightAheadcolor==2)and((currentLanenumber+1)==0))and(always[0,2](not(speed>0.5))))",
+        "eventually(((((trafficLightAheadcolor==2)and(stoplineAhead<=3.5))and(not(stoplineAhead<=0.5)))and(currentLanenumber>0))and(always[0,3](not(speed<0.5))))",
+        "eventually((((trafficLightAheadcolor==1)and(stoplineAhead<=2.0))and(not(direction==2)))and(always[0,3](not(speed<0.5))))",
+        "eventually((((trafficLightAheadcolor==1)and(junctionAhead<=2.0))and(not(direction==2)))and(always[0,3](not(speed<0.5))))",
+        "eventually((((((trafficLightAheadcolor==1)and(stoplineAhead<=2.0))and(direction==2))and(not(PriorityNPCAhead==1)))and(not(PriorityPedsAhead==1)))and(always[0,2](not(speed>0.5))))",
+        "eventually((((((trafficLightAheadcolor==1)and(junctionAhead<=2.0))and(direction==2))and(not(PriorityNPCAhead==1)))and(not(PriorityPedsAhead==1)))and(always[0,2](not(speed>0.5))))"
+    ],
+    "law44": [
+        "eventually((currentLanenumber>=2)and(not(speed>=speedLimitlowerLimit)))",
+        "eventually((currentLanenumber>=2)and(not(speed<=speedLimitupperLimit)))",
+        "eventually(((isLaneChanging==1)and(currentLanenumber>=2))and(PriorityNPCAhead==1))"
+    ],
+    "law45": [
+        "eventually(not(speed>=speedLimitlowerLimit))",
+        "eventually(not(speed<=speedLimitupperLimit))"
+    ],
+    "law46": [
+        "eventually((direction==1)and(not(speed<=30)))",
+        "eventually((direction==2)and(not(speed<=30)))",
+        "eventually((isTurningAround==1)and(not(speed<=30)))",
+        "eventually((rain>=0.5)and(not(speed<=30)))",
+        "eventually((fog>=0.5)and(not(speed<=30)))",
+        "eventually((snow>=0.5)and(not(speed<=30)))",
+        "eventually((visibility<=50)and(not(speed<=30)))"
+    ],
+    "law47": [
+        "eventually((isOverTaking==1)and(not(turnSignal==1)))",
+        "eventually((isOverTaking==1)and((always[-1,2](not(hornOn==1)))and((not(highBeamOn==1))and(not(lowBeamOn==1)))))",
+        "eventually((isOverTaking==1)and((always[-1,2](not(hornOn==1)))and((not(highBeamOn==1))and((lowBeamOn==1)and(always[0,2](not(highBeamOn==1)))))))",
+        "eventually((isOverTaking==1)and((always[-1,2](not(hornOn==1)))and(((highBeamOn==1)and(always[0,2](not(lowBeamOn==1))))and(not(lowBeamOn==1)))))",
+        "eventually((isOverTaking==1)and((always[-1,2](not(hornOn==1)))and(((highBeamOn==1)and(always[0,2](not(lowBeamOn==1))))and((lowBeamOn==1)and(always[0,2](not(highBeamOn==1)))))))",
+        "eventually((isOverTaking==1)and(always[0,10](not(turnSignal==2))))",
+        "eventually((isOverTaking==1)and(always[0,10]((isLaneChanging==1)and(not(NearestNPCAhead<=5.0)))))",
+        "eventually((isOverTaking==1)and(always[0,10](not(isLaneChanging==1))))"
+    ],
+    "law50": [
+        "eventually(gear==2)"
+    ],
+    "law51": [
+        "eventually(((((trafficLightAheadcolor==3)and(direction==1))and(Time<=20.0))and(Time>=7.0))and(not(turnSignal==1)))",
+        "eventually((((trafficLightAheadcolor==3)and(direction==1))and(Time>=20.0))and(not(turnSignal==1)))",
+        "eventually((((trafficLightAheadcolor==3)and(direction==1))and(Time>=20.0))and(not(lowBeamOn==1)))",
+        "eventually((((trafficLightAheadcolor==3)and(direction==1))and(Time<=7.0))and(not(turnSignal==1)))",
+        "eventually((((trafficLightAheadcolor==3)and(direction==1))and(Time<=7.0))and(not(lowBeamOn==1)))",
+        "eventually(((trafficLightAheadcolor==3)and(not(NPCAheadAhead<=8.0)))and(always[0,3](not(speed>0.5))))",
+        "eventually(((trafficLightAheadcolor==3)and(not(NPCAheadAhead<=8.0)))and(NPCAheadAhead<=0.5))",
+        "eventually(((trafficLightAheadcolor==3)and((not(NPCAheadAhead<=8.0))and(NPCAheadAhead<=8.0)))and(always[0,3](not(speed>0.5))))",
+        "eventually(((trafficLightAheadcolor==3)and((not(NPCAheadAhead<=8.0))and(NPCAheadAhead<=8.0)))and(NPCAheadAhead<=0.5))",
+        "eventually(((trafficLightAheadcolor==3)and((eventually[0,2](NPCAheadspeed>0.5))and(NPCAheadAhead<=8.0)))and(always[0,3](not(speed>0.5))))",
+        "eventually(((trafficLightAheadcolor==3)and((eventually[0,2](NPCAheadspeed>0.5))and(NPCAheadAhead<=8.0)))and(NPCAheadAhead<=0.5))",
+        "eventually(((trafficLightAheadcolor==1)and(stoplineAhead<=2.0))and(always[0,2](not(speed<0.5))))",
+        "eventually(((trafficLightAheadcolor==1)and(junctionAhead<=2.0))and(always[0,2](not(speed<0.5))))",
+        "eventually(((trafficLightAheadcolor==1)and(NPCAheadAhead<=0.5))and(always[0,2](not(speed<0.5))))",
+        "eventually((((direction==2)and(NPCAheadAhead<=2.0))and(eventually[0,2](NPCAheadspeed<0.5)))and(always[0,3](not(speed<0.5))))",
+        "eventually(((direction==2)and(PriorityNPCAhead==1))and(always[0,2](not(speed<0.5))))",
+        "eventually(((direction==2)and(PriorityPedsAhead==1))and(always[0,2](not(speed<0.5))))",
+        "eventually(((direction==1)and(PriorityNPCAhead==1))and(always[0,2](not(speed<0.5))))",
+        "eventually(((direction==1)and(PriorityPedsAhead==1))and(always[0,2](not(speed<0.5))))"
+    ],
+    "law52": [
+        "eventually((((signalAhead==0)and(PriorityNPCAhead==1))and(junctionAhead<=1.0))and(always[0,2](not(speed<0.5))))",
+        "eventually((((signalAhead==0)and(PriorityPedsAhead==1))and(junctionAhead<=1.0))and(always[0,2](not(speed<0.5))))"
+    ],
+    "law53": [
+        "eventually(((isTrafficJam==1)and(NPCAheadspeed<0.5))and(always[0,2](not(speed<0.5))))",
+        "eventually(((isTrafficJam==1)and(NPCAheadAhead<=0.5))and(always[0,2](not(speed<0.5))))",
+        "eventually(((isTrafficJam==1)and(junctionAhead<=1.0))and(always[0,2](not(speed<0.5))))"
+    ],
+    "law57": [
+        "eventually((direction==1)and(not(turnSignal==1)))",
+        "eventually((direction==2)and(not(turnSignal==2)))"
+    ],
+    "law58": [
+        "eventually((((not(streetLightOn==1))and(Time>=20.0))and(not(NPCAheadAhead<=10.0)))and(not(highBeamOn==1)))",
+        "eventually((((not(streetLightOn==1))and(Time<=7.0))and(not(NPCAheadAhead<=10.0)))and(not(highBeamOn==1)))",
+        "eventually(((rain>=0.5)and(not(NPCAheadAhead<=10.0)))and(not(highBeamOn==1)))",
+        "eventually(((fog>=0.5)and(not(NPCAheadAhead<=10.0)))and(not(highBeamOn==1)))",
+        "eventually(((snow>=0.5)and(not(NPCAheadAhead<=10.0)))and(not(highBeamOn==1)))",
+        "eventually((NPCAheadAhead<=10.0)and(highBeamOn==1))",
+        "eventually((fog>=0.5)and(not(fogLightOn==1)))",
+        "eventually((fog>=0.5)and(not(warningflashOn==1)))"
+    ],
+    "law59": [
+        "eventually(((crosswalkAhead<=5.0)and(Time>=20.0))and((always[0,3](not(highBeamOn==1)))and(always[0,3](not(lowBeamOn==1)))))",
+        "eventually(((crosswalkAhead<=5.0)and(Time>=20.0))and((always[0,3](not(highBeamOn==1)))and(always[0,3]((lowBeamOn==1)and(always[0,3](not(highBeamOn==1)))))))",
+        "eventually(((crosswalkAhead<=5.0)and(Time>=20.0))and((always[0,3]((highBeamOn==1)and(always[0,3](not(lowBeamOn==1)))))and(always[0,3](not(lowBeamOn==1)))))",
+        "eventually(((crosswalkAhead<=5.0)and(Time>=20.0))and((always[0,3]((highBeamOn==1)and(always[0,3](not(lowBeamOn==1)))))and(always[0,3]((lowBeamOn==1)and(always[0,3](not(highBeamOn==1)))))))",
+        "eventually(((crosswalkAhead<=5.0)and(Time<=7.0))and((always[0,3](not(highBeamOn==1)))and(always[0,3](not(lowBeamOn==1)))))",
+        "eventually(((crosswalkAhead<=5.0)and(Time<=7.0))and((always[0,3](not(highBeamOn==1)))and(always[0,3]((lowBeamOn==1)and(always[0,3](not(highBeamOn==1)))))))",
+        "eventually(((crosswalkAhead<=5.0)and(Time<=7.0))and((always[0,3]((highBeamOn==1)and(always[0,3](not(lowBeamOn==1)))))and(always[0,3](not(lowBeamOn==1)))))",
+        "eventually(((crosswalkAhead<=5.0)and(Time<=7.0))and((always[0,3]((highBeamOn==1)and(always[0,3](not(lowBeamOn==1)))))and(always[0,3]((lowBeamOn==1)and(always[0,3](not(highBeamOn==1)))))))",
+        "eventually((((signalAhead==0)and(junctionAhead<=1.0))and(Time>=20.0))and((always[0,3](not(highBeamOn==1)))and(always[0,3](not(lowBeamOn==1)))))",
+        "eventually((((signalAhead==0)and(junctionAhead<=1.0))and(Time>=20.0))and((always[0,3](not(highBeamOn==1)))and(always[0,3]((lowBeamOn==1)and(always[0,3](not(highBeamOn==1)))))))",
+        "eventually((((signalAhead==0)and(junctionAhead<=1.0))and(Time>=20.0))and((always[0,3]((highBeamOn==1)and(always[0,3](not(lowBeamOn==1)))))and(always[0,3](not(lowBeamOn==1)))))",
+        "eventually((((signalAhead==0)and(junctionAhead<=1.0))and(Time>=20.0))and((always[0,3]((highBeamOn==1)and(always[0,3](not(lowBeamOn==1)))))and(always[0,3]((lowBeamOn==1)and(always[0,3](not(highBeamOn==1)))))))",
+        "eventually((((signalAhead==0)and(junctionAhead<=1.0))and(Time<=7.0))and((always[0,3](not(highBeamOn==1)))and(always[0,3](not(lowBeamOn==1)))))",
+        "eventually((((signalAhead==0)and(junctionAhead<=1.0))and(Time<=7.0))and((always[0,3](not(highBeamOn==1)))and(always[0,3]((lowBeamOn==1)and(always[0,3](not(highBeamOn==1)))))))",
+        "eventually((((signalAhead==0)and(junctionAhead<=1.0))and(Time<=7.0))and((always[0,3]((highBeamOn==1)and(always[0,3](not(lowBeamOn==1)))))and(always[0,3](not(lowBeamOn==1)))))",
+        "eventually((((signalAhead==0)and(junctionAhead<=1.0))and(Time<=7.0))and((always[0,3]((highBeamOn==1)and(always[0,3](not(lowBeamOn==1)))))and(always[0,3]((lowBeamOn==1)and(always[0,3](not(highBeamOn==1)))))))"
+    ],
+    "law62": [
+        "eventually((not(honkingAllowed==1))and(hornOn==1))"
+    ]
+}
