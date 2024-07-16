@@ -28,7 +28,7 @@ Then, install the requirements packages:
 $ pip install -r requirements.txt
 ```
 
-Besides, we provide a [docker environment]() to evaluate the **violation detection** and **scenario mutation** functionalities. It is worth noting that the docker is not equipped with GPU environment, so the simulation-based testing cannot be tested:
+Besides, we provide a [docker environment](https://zenodo.org/records/12666547) to evaluate the **violation detection** and **scenario mutation** functionalities. It is worth noting that the docker is not equipped with GPU environment, so the simulation-based testing cannot be tested:
 
 ```
 $ docker build -t viohawk:latest .
