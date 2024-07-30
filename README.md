@@ -1,6 +1,6 @@
 # VioHawk
 
-This project is a prototype for VioHawk. It aims to demonstrate the functionality and design of the tool from our paper **"VioHawk: Detecting Traffic Violations of Autonomous Driving Systems through Criticality-guided Simulation Testing"**.
+This project is a prototype for VioHawk. It aims to demonstrate the functionality and design of the tool from our paper **"VioHawk: Detecting Traffic Violations of Autonomous Driving Systems through Criticality-guided Simulation Testing"**. https://zenodo.org/records/12666547.
 
 ## Structure
 
