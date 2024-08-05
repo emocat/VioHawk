@@ -5,7 +5,8 @@ from enum import Enum
 import os
 
 import sys
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 data_dir = os.path.join(os.path.dirname(__file__), "data")
 map_dir = os.path.join(os.path.dirname(__file__), "../map/")
@@ -73,9 +74,7 @@ def trim_scenario_by_time_step(time_step, cr_scenario, cr_planning_problem_set, 
             planning_problem.initial_state.position[0] = ego_states[time_step]["Position"]["x"]
             planning_problem.initial_state.position[1] = ego_states[time_step]["Position"]["z"]
             planning_problem.initial_state.orientation = math.radians(90 - ego_states[time_step]["Rotation"]["y"])
-            planning_problem.initial_state.velocity = (
-                ego_states[time_step]["Speed"] if ego_states[time_step]["Speed"] > 0 else 0
-            )
+            planning_problem.initial_state.velocity = ego_states[time_step]["Speed"] if ego_states[time_step]["Speed"] > 0 else 0
 
 
 def convert_polygon_to_curvilinear_coords(polygon, CLCS):
@@ -146,9 +145,7 @@ class DrivingIntentionType(Enum):
 class DrivingIntention:
     @classmethod
     def intention_cross_intersection(cls, traces, map_info, osm_map_info, config):
-        junction_area = helper.get_junction_area_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info, dist=100
-        )
+        junction_area = helper.get_junction_area_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info, dist=100)
         return junction_area
 
     @classmethod
@@ -216,9 +213,7 @@ class DrivingCondition:
 
     @classmethod
     def condition_traffic_jam(cls, traces, map_info, osm_map_info, config, time_step):
-        junction_area = helper.get_junction_area_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info
-        )
+        junction_area = helper.get_junction_area_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info)
 
         NPCs = traces[time_step]["NPCs"]
         NPCs_in_junction_jam = []
@@ -264,17 +259,11 @@ class DrivingCondition:
             return EMPTY_POLYGON
 
         ego_states = helper.get_ego_states(traces)
-        junction_area = helper.get_junction_area_ahead(
-            traces[time_step]["EGO"]["Position"], traces[time_step]["EGO"]["Rotation"], map_info
-        )
+        junction_area = helper.get_junction_area_ahead(traces[time_step]["EGO"]["Position"], traces[time_step]["EGO"]["Rotation"], map_info)
 
         for t in range(config.planning.steps_computation):
             traffic_lights_curr = traces[time_step + 1 + t]["Traffic_Lights"]
-            ego_polygon = Polygon(
-                helper.get_four_wheel_position(
-                    ego_states[time_step + 1 + t]["Position"], ego_states[time_step + 1 + t]["Rotation"]
-                )
-            )
+            ego_polygon = Polygon(helper.get_four_wheel_position(ego_states[time_step + 1 + t]["Position"], ego_states[time_step + 1 + t]["Rotation"]))
 
             if len(traffic_lights_curr) == 0 or traffic_lights_curr[0]["Label"] != "yellow":
                 continue
@@ -310,13 +299,9 @@ class DrivingCondition:
 
         ego_before = traces[time_step]["EGO"]
         ego_after = traces[time_step + config.planning.steps_computation]["EGO"]
-        ego_pos_curv = config.planning.CLCS.convert_to_curvilinear_coords(
-            ego_before["Position"]["x"], ego_before["Position"]["z"]
-        )
+        ego_pos_curv = config.planning.CLCS.convert_to_curvilinear_coords(ego_before["Position"]["x"], ego_before["Position"]["z"])
 
-        area_before = map_info.check_whether_in_lane_area(
-            Point(ego_before["Position"]["x"], ego_before["Position"]["z"])
-        )
+        area_before = map_info.check_whether_in_lane_area(Point(ego_before["Position"]["x"], ego_before["Position"]["z"]))
         area_after = map_info.check_whether_in_lane_area(Point(ego_after["Position"]["x"], ego_after["Position"]["z"]))
 
         lane_before = area_before[0]["lane_id"] if len(area_before) != 0 else None
@@ -332,23 +317,17 @@ class DrivingCondition:
 
                     if abs(NPC_pos_curv[0] - ego_pos_curv[0]) < 20:
                         left_bound = map_info.areas["lane_areas_left"][lane_after]
-                        left_bound = util_coordinate_system.convert_to_curvilinear_vertices(
-                            left_bound, config.planning.CLCS
-                        )
+                        left_bound = util_coordinate_system.convert_to_curvilinear_vertices(left_bound, config.planning.CLCS)
                         y1 = left_bound[len(left_bound) // 2][1]
                         right_bound = map_info.areas["lane_areas_right"][lane_after]
-                        right_bound = util_coordinate_system.convert_to_curvilinear_vertices(
-                            right_bound, config.planning.CLCS
-                        )
+                        right_bound = util_coordinate_system.convert_to_curvilinear_vertices(right_bound, config.planning.CLCS)
                         y2 = right_bound[len(right_bound) // 2][1]
 
                         x1 = NPC_pos_curv[0]
                         x2 = NPC_pos_curv[0] + 5
 
                         tmp_dangerous_area = Polygon([(x1, y1), (x1, y2), (x2, y2), (x2, y1)])
-                        tmp_dangerous_area = convert_polygon_to_cartesian_coords(
-                            tmp_dangerous_area, config.planning.CLCS
-                        )
+                        tmp_dangerous_area = convert_polygon_to_cartesian_coords(tmp_dangerous_area, config.planning.CLCS)
                         dangerous_area.append(tmp_dangerous_area)
 
         return unary_union(dangerous_area)
@@ -358,9 +337,7 @@ class DrivingCondition:
         dangerous_area = []
 
         ego_before = traces[time_step]["EGO"]
-        ego_pos_curv = config.planning.CLCS.convert_to_curvilinear_coords(
-            ego_before["Position"]["x"], ego_before["Position"]["z"]
-        )
+        ego_pos_curv = config.planning.CLCS.convert_to_curvilinear_coords(ego_before["Position"]["x"], ego_before["Position"]["z"])
 
         NPCs = traces[time_step + config.planning.steps_computation]["NPCs"]
         for NPC in NPCs:
@@ -409,12 +386,8 @@ class DrivingCondition:
 
     @classmethod
     def condition_npc_stop_at_crosswalk(cls, traces, map_info, osm_map_info, config, time_step):
-        junction_area = helper.get_junction_area_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info
-        )
-        crosswalk_area = helper.get_crosswalk_area_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info
-        )
+        junction_area = helper.get_junction_area_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info)
+        crosswalk_area = helper.get_crosswalk_area_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info)
 
         NPCs = traces[time_step + config.planning.steps_computation]["NPCs"]
         for NPC in NPCs:
@@ -430,9 +403,7 @@ class DrivingCondition:
 
     @classmethod
     def condition_pedestrian_at_crosswalk(cls, traces, map_info, osm_map_info, config, time_step):
-        junction_area = helper.get_junction_area_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info
-        )
+        junction_area = helper.get_junction_area_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info)
 
         NPCs = traces[time_step + config.planning.steps_computation]["NPCs"]
         for NPC in NPCs:
@@ -459,25 +430,19 @@ class DrivingCondition:
 
     @classmethod
     def condition_at_crosswalk(cls, traces, map_info, osm_map_info, config, time_step):
-        crosswalk_area = helper.get_crosswalk_area_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info
-        )
+        crosswalk_area = helper.get_crosswalk_area_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info)
 
         return crosswalk_area
 
     @classmethod
     def condition_at_intersection(cls, traces, map_info, osm_map_info, config, time_step):
-        junction_area = helper.get_junction_area_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info
-        )
+        junction_area = helper.get_junction_area_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info)
 
         return junction_area
 
     @classmethod
     def condition_near_crosswalk(cls, traces, map_info, osm_map_info, config, time_step):
-        crosswalk_area = helper.get_crosswalk_area_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info
-        )
+        crosswalk_area = helper.get_crosswalk_area_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info)
 
         # extend crosswalk area by 20m
         crosswalk_polygon = convert_polygon_to_curvilinear_coords(crosswalk_area, config.planning.CLCS)
@@ -496,18 +461,14 @@ class DrivingCondition:
 
     @classmethod
     def condition_near_signal(cls, traces, map_info, osm_map_info, config, time_step):
-        traffic_light_point = helper.get_traffic_light_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info, 80
-        )
+        traffic_light_point = helper.get_traffic_light_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], osm_map_info, 80)
         traffic_light_area = traffic_light_point.buffer(6.7056)
 
         return traffic_light_area
 
     @classmethod
     def condition_near_stop_sign(cls, traces, map_info, osm_map_info, config, time_step):
-        stop_sign_line = helper.get_stop_sign_ahead(
-            traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info, dist=50
-        )
+        stop_sign_line = helper.get_stop_sign_ahead(traces[0]["EGO"]["Position"], traces[0]["EGO"]["Rotation"], map_info, dist=50)
 
         x, y = stop_sign_line.coords.xy
         area1 = np.array(list(zip(x, y)))
@@ -621,12 +582,8 @@ class Mutator(metaclass=abc.ABCMeta):
         self.dangerous_area_list = []
 
     def get_dangerous_area(self, tmp_config, time_step):
-        driving_intention_area = DrivingIntention.resolve(
-            self.driving_intention, self.traces, self.map_info, self.osm_map_info, tmp_config
-        ).buffer(0.01)
-        driving_condition_area = DrivingCondition.resolve(
-            self.driving_condition, self.traces, self.map_info, self.osm_map_info, tmp_config, time_step
-        ).buffer(0.01)
+        driving_intention_area = DrivingIntention.resolve(self.driving_intention, self.traces, self.map_info, self.osm_map_info, tmp_config).buffer(0.01)
+        driving_condition_area = DrivingCondition.resolve(self.driving_condition, self.traces, self.map_info, self.osm_map_info, tmp_config, time_step).buffer(0.01)
         dangerous_area = driving_intention_area.intersection(driving_condition_area)
         return dangerous_area
 
@@ -712,6 +669,92 @@ class Mutator(metaclass=abc.ABCMeta):
 
         return max_prop
 
+    def compute_dangerous_score_for_detection(self):
+        """Step 1: trim the scenario by time step, compute reachable set and dangerous area"""
+        max_prop = 0
+        max_timestep = 0
+        max_t = 0
+        max_reachable_set = Polygon()
+        max_drivable_area = Polygon()
+        max_dangerous_area = Polygon()
+        max_dangerous_overlap_area = Polygon()
+        DrivingCondition.flag_always_true = False
+        is_violation = False
+
+        assert len(self.traces) == 300, "traces is too short"
+
+        for t in range(NUM):
+            tmp_config = copy.deepcopy(self.cr_config)
+            tmp_cr_scenario = copy.deepcopy(self.cr_scenario)
+            tmp_cr_planning_problem_set = copy.deepcopy(self.cr_planning_problem_set)
+            ego_states = helper.get_ego_states(self.traces)
+            time_step = t * (200 // NUM)
+
+            trim_scenario_by_time_step(time_step, tmp_cr_scenario, tmp_cr_planning_problem_set, ego_states)
+
+            # compute reachable set
+            tmp_config.update(scenario=tmp_cr_scenario, planning_problem_set=tmp_cr_planning_problem_set)
+            tmp_config.planning.steps_computation = 200 // NUM
+            reach_interface = ReachableSetInterface(tmp_config)
+            reach_interface.compute_reachable_sets()
+
+            # get drivable area
+            reachable_set = reach_interface.reachable_set_at_step(tmp_config.planning.steps_computation)
+            drivable_area = []
+            for rs in reachable_set:
+                assert rs.position_rectangle, "position_rectangle is None"
+                vertice = Polygon(rs.position_rectangle.vertices)
+                drivable_area.append(vertice)
+            drivable_area = unary_union(drivable_area)
+            drivable_area = convert_polygon_to_cartesian_coords(drivable_area, tmp_config.planning.CLCS)
+
+            # get dangerous area
+            dangerous_area = self.get_dangerous_area(tmp_config, time_step)
+
+            ##### whether the ego is in the dangerous area #####
+            ego = self.traces[time_step + tmp_config.planning.steps_computation]["EGO"]
+            ego_polygon = Polygon(helper.get_four_wheel_position(ego["Position"], ego["Rotation"]))
+            if ego_polygon.intersection(dangerous_area).area / ego_polygon.area > 0.01:
+                LOG.info("A violation is found.")
+                is_violation = True
+            ####################################################
+
+            # calculate the proportion of drivable area in dangerous area
+            dangerous_overlap_area = drivable_area.intersection(dangerous_area)
+            if drivable_area.area == 0:
+                prop = 0
+            else:
+                prop = dangerous_overlap_area.area / drivable_area.area
+            print("proportion: ", prop)
+
+            if prop > max_prop:
+                max_prop = prop
+                max_timestep = time_step
+                max_t = t
+                max_reachable_set = reachable_set
+                max_drivable_area = drivable_area
+                max_dangerous_area = dangerous_area
+                max_dangerous_overlap_area = dangerous_overlap_area
+
+            self.reach_interface_list.append(reach_interface)
+            self.dangerous_area_list.append(dangerous_area)
+
+        print("max proportion: ", max_prop)
+        print("max t: ", max_t)
+        print("max time step: ", max_timestep)
+        self.max_prop = max_prop
+        self.max_timestep = max_timestep
+        self.max_t = max_t
+        self.max_reachable_set = max_reachable_set
+        self.max_drivable_area = max_drivable_area
+        self.max_dangerous_area = max_dangerous_area
+        self.max_dangerous_overlap_area = max_dangerous_overlap_area
+
+        if is_violation:
+            return -1
+
+        return max_prop
+
     def get_nine_grid(self) -> None:
         """Step 2: divide the around area into nine grids, find the grid with the largest drivable area to mutate"""
         max_config = self.reach_interface_list[self.max_t].config
@@ -728,12 +771,8 @@ class Mutator(metaclass=abc.ABCMeta):
 
             left_lane = self.map_info.areas["lane_areas_left"][ego_lane_id]
             right_lane = self.map_info.areas["lane_areas_right"][ego_lane_id]
-            vertical_left_line = LineString(
-                util_coordinate_system.convert_to_curvilinear_vertices(left_lane, max_config.planning.CLCS)
-            )
-            vertical_right_line = LineString(
-                util_coordinate_system.convert_to_curvilinear_vertices(right_lane, max_config.planning.CLCS)
-            )
+            vertical_left_line = LineString(util_coordinate_system.convert_to_curvilinear_vertices(left_lane, max_config.planning.CLCS))
+            vertical_right_line = LineString(util_coordinate_system.convert_to_curvilinear_vertices(right_lane, max_config.planning.CLCS))
             vertical_left_line = helper.extend_linestring_in_curvilinear(vertical_left_line, 5)
             vertical_right_line = helper.extend_linestring_in_curvilinear(vertical_right_line, 5)
 
@@ -746,12 +785,8 @@ class Mutator(metaclass=abc.ABCMeta):
                     for lane in lane_list:
                         left_lane = self.map_info.areas["lane_areas_left"][lane]
                         right_lane = self.map_info.areas["lane_areas_right"][lane]
-                        left_bound = util_coordinate_system.convert_to_curvilinear_vertices(
-                            left_lane, max_config.planning.CLCS
-                        )
-                        right_bound = util_coordinate_system.convert_to_curvilinear_vertices(
-                            right_lane, max_config.planning.CLCS
-                        )
+                        left_bound = util_coordinate_system.convert_to_curvilinear_vertices(left_lane, max_config.planning.CLCS)
+                        right_bound = util_coordinate_system.convert_to_curvilinear_vertices(right_lane, max_config.planning.CLCS)
                         if left_bound:
                             bound_list.append(left_bound[0][1])
                         if right_bound:
@@ -760,12 +795,8 @@ class Mutator(metaclass=abc.ABCMeta):
 
             if bound_list:
                 car_length = 2
-                horizontal_up_line = LineString(
-                    [[ego[0] + car_length, min(bound_list) - 3], [ego[0] + car_length, max(bound_list) + 3]]
-                )
-                horizontal_down_line = LineString(
-                    [[ego[0] - car_length, min(bound_list) - 3], [ego[0] - car_length, max(bound_list) + 3]]
-                )
+                horizontal_up_line = LineString([[ego[0] + car_length, min(bound_list) - 3], [ego[0] + car_length, max(bound_list) + 3]])
+                horizontal_down_line = LineString([[ego[0] - car_length, min(bound_list) - 3], [ego[0] - car_length, max(bound_list) + 3]])
                 break
 
         lu_point = horizontal_up_line.intersection(vertical_left_line)
@@ -807,26 +838,18 @@ class Mutator(metaclass=abc.ABCMeta):
         right_down = min(rd_point.x - max_dist, right_down)
         space1 = Polygon([lu_point, (left_top, lu_point.y), (left_top, max(bound_list)), (lu_point.x, max(bound_list))])
         space2 = Polygon([lu_point, (left_top, lu_point.y), (right_top, ru_point.y), ru_point])
-        space3 = Polygon(
-            [ru_point, (right_top, ru_point.y), (right_top, min(bound_list)), (ru_point.x, min(bound_list))]
-        )
+        space3 = Polygon([ru_point, (right_top, ru_point.y), (right_top, min(bound_list)), (ru_point.x, min(bound_list))])
         space4 = Polygon([lu_point, ld_point, (ld_point.x, max(bound_list)), (lu_point.x, max(bound_list))])
         space5 = Polygon([lu_point, ld_point, rd_point, ru_point])
         space6 = Polygon([ru_point, rd_point, (rd_point.x, min(bound_list)), (ru_point.x, min(bound_list))])
-        space7 = Polygon(
-            [ld_point, (left_down, ld_point.y), (left_down, max(bound_list)), (ld_point.x, max(bound_list))]
-        )
+        space7 = Polygon([ld_point, (left_down, ld_point.y), (left_down, max(bound_list)), (ld_point.x, max(bound_list))])
         space8 = Polygon([ld_point, (left_down, ld_point.y), (right_down, rd_point.y), rd_point])
-        space9 = Polygon(
-            [rd_point, (right_down, rd_point.y), (right_down, min(bound_list)), (rd_point.x, min(bound_list))]
-        )
+        space9 = Polygon([rd_point, (right_down, rd_point.y), (right_down, min(bound_list)), (rd_point.x, min(bound_list))])
 
         nine_space = [space1, space2, space3, space4, space5, space6, space7, space8, space9]
 
         for i in range(9):
-            tmp_space = util_coordinate_system.convert_to_cartesian_polygons(
-                nine_space[i], max_config.planning.CLCS, True
-            )
+            tmp_space = util_coordinate_system.convert_to_cartesian_polygons(nine_space[i], max_config.planning.CLCS, True)
             if len(tmp_space) == 1:
                 nine_space[i] = tmp_space[0]._shapely_polygon
             elif len(tmp_space) > 1:
@@ -872,7 +895,7 @@ class Mutator(metaclass=abc.ABCMeta):
         self.nine_poly = nine_poly
         self.max_poly_i = max_poly_i
 
-    def mutate(self) -> scenario.Scenario:
+    def mutate(self, sim_mode) -> scenario.Scenario:
         """Step 3: mutate the scenario"""
         max_config = self.reach_interface_list[self.max_t].config
         max_poly_i = self.max_poly_i
@@ -925,9 +948,7 @@ class Mutator(metaclass=abc.ABCMeta):
 
             # should not overlap with other pedestrians
             for pedestrian in new_scenario.elements["pedestrian"]:
-                pedestrian_polygon = Point(
-                    pedestrian.transform.position["x"], pedestrian.transform.position["z"]
-                ).buffer(1)
+                pedestrian_polygon = Point(pedestrian.transform.position["x"], pedestrian.transform.position["z"]).buffer(1)
                 if new_npc_polygon.intersects(pedestrian_polygon):
                     LOG.error("mutated NPC is overlap with pedestrians")
                     return True
@@ -939,6 +960,13 @@ class Mutator(metaclass=abc.ABCMeta):
                 LOG.error("mutated NPC is overlap with EGO")
                 return True
             return False
+
+        def sim_get_map_point_on_lane(x, y, z):
+            sim = lgsvl.Simulator(lgsvl.wise.SimulatorSettings.simulator_host, lgsvl.wise.SimulatorSettings.simulator_port)
+            tmp_point_on_lane = sim.map_point_on_lane(lgsvl.Vector(x, y, z))
+            sim.reset()
+            sim.close()
+            return tmp_point_on_lane
 
         def npc_speed_down(npc):
             LOG.info("mutation: speed down")
@@ -994,30 +1022,23 @@ class Mutator(metaclass=abc.ABCMeta):
             LOG.info("mutation: forward - {}".format(distance_to_add))
 
             npc_scenario: scenario.NPCVehicle = npc_index[npc["Id"]]
-            old_npc_position_curv = max_config.planning.CLCS.convert_to_curvilinear_coords(
-                npc_scenario.transform.position["x"], npc_scenario.transform.position["z"]
-            )
+            old_npc_position_curv = max_config.planning.CLCS.convert_to_curvilinear_coords(npc_scenario.transform.position["x"], npc_scenario.transform.position["z"])
             new_npc_position_curv = old_npc_position_curv + distance_to_add
 
-            sim = lgsvl.Simulator(
-                lgsvl.wise.SimulatorSettings.simulator_host, lgsvl.wise.SimulatorSettings.simulator_port
-            )
-            tmp_point = max_config.planning.CLCS.convert_to_cartesian_coords(
-                new_npc_position_curv[0], new_npc_position_curv[1]
-            )
-            tmp_point_on_lane = sim.map_point_on_lane(lgsvl.Vector(tmp_point[0], 0, tmp_point[1]))
-            sim.reset()
-            sim.close()
+            tmp_point = max_config.planning.CLCS.convert_to_cartesian_coords(new_npc_position_curv[0], new_npc_position_curv[1])
+            if sim_mode:
+                tmp_point_on_lane = sim_get_map_point_on_lane(tmp_point[0], 0, tmp_point[1])
 
-            if helper.calc_distance(tmp_point_on_lane.position, tmp_point) > 3:  # cannot map point on lane
-                LOG.info("cannot map point on lane, directly move forward")
+                if helper.calc_distance(tmp_point_on_lane.position, tmp_point) > 3:  # cannot map point on lane
+                    LOG.info("cannot map point on lane, directly move forward")
+                    new_point_position = dict(x=tmp_point[0], y=npc_scenario.transform.position["y"], z=tmp_point[1])
+                    new_point_rotation = dict(x=0, y=npc_scenario.transform.rotation["y"], z=0)
+                else:
+                    new_point_position = dict(x=tmp_point_on_lane.position.x, y=tmp_point_on_lane.position.y, z=tmp_point_on_lane.position.z)
+                    new_point_rotation = dict(x=0, y=tmp_point_on_lane.rotation.y, z=0)
+            else:
                 new_point_position = dict(x=tmp_point[0], y=npc_scenario.transform.position["y"], z=tmp_point[1])
                 new_point_rotation = dict(x=0, y=npc_scenario.transform.rotation["y"], z=0)
-            else:
-                new_point_position = dict(
-                    x=tmp_point_on_lane.position.x, y=tmp_point_on_lane.position.y, z=tmp_point_on_lane.position.z
-                )
-                new_point_rotation = dict(x=0, y=tmp_point_on_lane.rotation.y, z=0)
 
             if new_npc_overlap_with_other_elements(npc, new_point_position, new_point_rotation):
                 return
@@ -1037,30 +1058,23 @@ class Mutator(metaclass=abc.ABCMeta):
             LOG.info("mutation: backward - {}".format(distance_to_sub))
 
             npc_scenario: scenario.NPCVehicle = npc_index[npc["Id"]]
-            old_npc_position_curv = max_config.planning.CLCS.convert_to_curvilinear_coords(
-                npc_scenario.transform.position["x"], npc_scenario.transform.position["z"]
-            )
+            old_npc_position_curv = max_config.planning.CLCS.convert_to_curvilinear_coords(npc_scenario.transform.position["x"], npc_scenario.transform.position["z"])
             new_npc_position_curv = old_npc_position_curv - distance_to_sub
 
-            sim = lgsvl.Simulator(
-                lgsvl.wise.SimulatorSettings.simulator_host, lgsvl.wise.SimulatorSettings.simulator_port
-            )
-            tmp_point = max_config.planning.CLCS.convert_to_cartesian_coords(
-                new_npc_position_curv[0], new_npc_position_curv[1]
-            )
-            tmp_point_on_lane = sim.map_point_on_lane(lgsvl.Vector(tmp_point[0], 0, tmp_point[1]))
-            sim.reset()
-            sim.close()
+            tmp_point = max_config.planning.CLCS.convert_to_cartesian_coords(new_npc_position_curv[0], new_npc_position_curv[1])
+            if sim_mode:
+                tmp_point_on_lane = sim_get_map_point_on_lane(tmp_point[0], 0, tmp_point[1])
 
-            if helper.calc_distance(tmp_point_on_lane.position, tmp_point) > 3:  # cannot map point on lane
-                LOG.info("cannot map point on lane, directly move forward")
+                if helper.calc_distance(tmp_point_on_lane.position, tmp_point) > 3:  # cannot map point on lane
+                    LOG.info("cannot map point on lane, directly move forward")
+                    new_point_position = dict(x=tmp_point[0], y=npc_scenario.transform.position["y"], z=tmp_point[1])
+                    new_point_rotation = dict(x=0, y=npc_scenario.transform.rotation["y"], z=0)
+                else:
+                    new_point_position = dict(x=tmp_point_on_lane.position.x, y=tmp_point_on_lane.position.y, z=tmp_point_on_lane.position.z)
+                    new_point_rotation = dict(x=0, y=tmp_point_on_lane.rotation.y, z=0)
+            else:
                 new_point_position = dict(x=tmp_point[0], y=npc_scenario.transform.position["y"], z=tmp_point[1])
                 new_point_rotation = dict(x=0, y=npc_scenario.transform.rotation["y"], z=0)
-            else:
-                new_point_position = dict(
-                    x=tmp_point_on_lane.position.x, y=tmp_point_on_lane.position.y, z=tmp_point_on_lane.position.z
-                )
-                new_point_rotation = dict(x=0, y=tmp_point_on_lane.rotation.y, z=0)
 
             if new_npc_overlap_with_other_elements(npc, new_point_position, new_point_rotation):
                 return
@@ -1084,12 +1098,12 @@ class Mutator(metaclass=abc.ABCMeta):
             self.mutate_choice = 0
 
             center = area.centroid
-            sim = lgsvl.Simulator(
-                lgsvl.wise.SimulatorSettings.simulator_host, lgsvl.wise.SimulatorSettings.simulator_port
-            )
-            tmp_point = sim.map_point_on_lane(lgsvl.Vector(center.x, 0, center.y))
-            sim.reset()
-            sim.close()
+            if sim_mode:
+                tmp_point = sim_get_map_point_on_lane(center.x, 0, center.y)
+            else:
+                tmp_point_position = lgsvl.Vector(x=center.x, y=0, z=center.y)
+                tmp_point_rotation = lgsvl.Vector(x=0, y=0, z=0)
+                tmp_point = lgsvl.Transform(tmp_point_position, tmp_point_rotation)
 
             if new_npc_overlap_with_other_elements(dict(Id=-1), tmp_point.position, tmp_point.rotation):
                 return
@@ -1116,11 +1130,7 @@ class Mutator(metaclass=abc.ABCMeta):
             return wp.within(self.max_dangerous_area)
 
         if max_poly_i != -1:
-            if (
-                self.max_dangerous_area.intersection(self.nine_space[max_poly_i]).area
-                / self.nine_space[max_poly_i].area
-                < 0.05
-            ):
+            if self.max_dangerous_area.intersection(self.nine_space[max_poly_i]).area / self.nine_space[max_poly_i].area < 0.05:
                 danger_in_poly = False
             else:
                 danger_in_poly = self.max_dangerous_area.intersection(self.nine_space[max_poly_i]).area > 0
@@ -1166,9 +1176,9 @@ class Mutator(metaclass=abc.ABCMeta):
 
         return new_scenario
 
-    def mutation(self) -> scenario.Scenario:
+    def mutation(self, sim_mode=True) -> scenario.Scenario:
         self.get_nine_grid()
-        return self.mutate()
+        return self.mutate(sim_mode)
 
 
 class MutatorFactory:
@@ -1305,40 +1315,65 @@ def create_mutator(seed_scenario: scenario.Scenario, trace: str, map: str, rule:
     config = MutationConfig(seed_scenario, initial_config, seed_trace)
     mutator = MutatorFactory.create_mutator(rule, config=config)
 
-    cr_scenario, cr_planning_problem_set = transform.generate_commonroad_scenario(
-        "mutation", trace, map, seed_scenario.seed_path
-    )
+    cr_scenario, cr_planning_problem_set = transform.generate_commonroad_scenario("mutation", trace, map, seed_scenario.seed_path)
     mutator.cr_scenario = cr_scenario
     mutator.cr_planning_problem_set = cr_planning_problem_set
 
     return mutator
 
 
-@click.command()
-@click.option(
-    "-s", "--seed", type=click.Path(exists=True, dir_okay=False), required=True, help="scenario seed file to be mutated"
-)
-@click.option(
-    "-t", "--trace", type=click.Path(exists=True, dir_okay=False), required=True, help="trace file of the seed"
-)
-@click.option(
-    "-m",
-    "--map",
-    type=click.Path(dir_okay=False, exists=True),
-    required=True,
-    help="The file which contains the map info.",
-)
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
+@click.option("-s", "--seed", type=click.Path(exists=True, dir_okay=False), required=True, help="scenario seed file to be mutated")
+@click.option("-t", "--trace", type=click.Path(exists=True, dir_okay=False), required=True, help="trace file of the seed")
+@click.option("-m", "--map", type=click.Path(dir_okay=False, exists=True), required=True, help="The file which contains the map info.")
 @click.option("-r", "--rule", type=str, required=True, help="targeted traffic rule")
-@click.option(
-    "-o", "--output", type=click.Path(exists=False, dir_okay=False), required=True, help="output path for mutated seed"
-)
-def cli(seed: str, trace: str, map: str, rule: str, output: str):
+def detect(seed: str, trace: str, map: str, rule: str):
     seed_scenario = scenario.Scenario(seed)
-
     mutator = create_mutator(seed_scenario, trace, map, rule)
+    res = mutator.compute_dangerous_score_for_detection()
 
-    mutator.compute_dangerous_score()
-    new_scenario = mutator.mutation()
+    if res == -1:
+        print("Violation!")
+        exit(1)
+    else:
+        print("Safe (score {})".format(res))
+
+
+@cli.command()
+@click.option("-s", "--seed", type=click.Path(exists=True, dir_okay=False), required=True, help="scenario seed file to be mutated")
+@click.option("-t", "--trace", type=click.Path(exists=True, dir_okay=False), required=True, help="trace file of the seed")
+@click.option("-m", "--map", type=click.Path(dir_okay=False, exists=True), required=True, help="The file which contains the map info.")
+@click.option("-r", "--rule", type=str, required=True, help="targeted traffic rule")
+def visualize(seed: str, trace: str, map: str, rule: str):
+    seed_scenario = scenario.Scenario(seed)
+    mutator = create_mutator(seed_scenario, trace, map, rule)
+    res = mutator.compute_dangerous_score_for_detection()
+    utils.visualization.plot_scenario_with_reachable_sets(mutator.reach_interface_list, num_of_frame=NUM, danger_zone_list=mutator.dangerous_area_list)
+
+
+@cli.command()
+@click.option("-s", "--seed", type=click.Path(exists=True, dir_okay=False), required=True, help="scenario seed file to be mutated")
+@click.option("-t", "--trace", type=click.Path(exists=True, dir_okay=False), required=True, help="trace file of the seed")
+@click.option("-m", "--map", type=click.Path(dir_okay=False, exists=True), required=True, help="The file which contains the map info.")
+@click.option("-r", "--rule", type=str, required=True, help="targeted traffic rule")
+@click.option("-o", "--output", type=click.Path(exists=False, dir_okay=False), required=True, help="output path for mutated seed")
+def mutate(seed: str, trace: str, map: str, rule: str, output: str):
+    seed_scenario = scenario.Scenario(seed)
+    mutator = create_mutator(seed_scenario, trace, map, rule)
+    res = mutator.compute_dangerous_score()
+
+    if res == -1:
+        print("Violation! No further mutation...")
+        return
+    else:
+        print("Safe (score {})".format(res))
+
+    new_scenario = mutator.mutation(sim_mode=False)
     new_scenario.store(output)
 
 

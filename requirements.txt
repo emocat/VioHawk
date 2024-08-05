@@ -1,8 +1,9 @@
 click==8.1.7
-commonroad_drivability_checker==2023.1
 commonroad_reach==2023.1
+commonroad-drivability-checker==2023.1
+commonroad-io==2023.1
+commonroad-route-planner==2022.3
 geopandas==0.10.2
-lgsvl==2021.1+30.g5aa0c06
 lxml==4.9.3
 matplotlib==3.5.3
 networkx==2.6.3
@@ -18,3 +19,4 @@ scipy==1.7.3
 Shapely==2.0.2
 timeout_decorator==0.5.0
 utm==0.7.0
+ruamel.yaml==0.16.13
