@@ -35,7 +35,7 @@ $ patch /path/to/site-packages/commonroad_reach/utility/coordinate_system.py coo
 $ patch /path/to/site-packages/commonroad_reach/data_structure/configuration.py configuration.py.patch
 ```
 
-Besides, we provide a [docker environment](https://zenodo.org/records/12666547) to evaluate the **violation detection** and **scenario mutation** functionalities. It is worth noting that the docker is not equipped with GPU environment, so the simulation-based testing cannot be tested:
+Besides, we provide an [artifact](https://zenodo.org/records/12666547) which includes a docker environment and datasets to evaluate the **violation detection** and **scenario mutation** functionalities. It is worth noting that the docker is not equipped with GPU environment, so the simulation-based testing cannot be tested:
 
 ```
 $ docker build -t viohawk:latest .
