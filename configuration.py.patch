@@ -1,0 +1,5 @@
+525c525,526
+<                     self.CLCS = util_configuration.create_curvilinear_coordinate_system(self.reference_path)
+---
+>                     # self.CLCS = util_configuration.create_curvilinear_coordinate_system(self.reference_path)
+>                     self.CLCS = util_configuration.create_curvilinear_coordinate_system(self.reference_path, eps2=10) # by albanis

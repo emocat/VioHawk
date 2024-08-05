@@ -1,0 +1,29 @@
+114,115c114,115
+<     try:
+<         list_vertices_cvln = [CLCS.convert_to_curvilinear_coords(vertex[0], vertex[1]) for vertex in vertices_cart]
+---
+>     # try:
+>     #     list_vertices_cvln = [CLCS.convert_to_curvilinear_coords(vertex[0], vertex[1]) for vertex in vertices_cart]
+117,121c117,118
+<     except ValueError:
+<         return []
+< 
+<     else:
+<         return list_vertices_cvln
+---
+>     # except ValueError:
+>     #     return []
+122a120,132
+>     # else:
+>     #     return list_vertices_cvln
+>     
+>     # by albanis
+>     list_vertices_cvln = []
+>     for vertex in vertices_cart:
+>         try:
+>             v = CLCS.convert_to_curvilinear_coords(vertex[0], vertex[1])
+>         except ValueError:
+>             continue
+>         else:
+>             list_vertices_cvln.append(v)
+>     return list_vertices_cvln
