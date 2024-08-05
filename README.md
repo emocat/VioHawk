@@ -20,12 +20,19 @@ The project is structured as follows:
 
 The VioHawk tools and experiments are tested under Python 3.7.16 with Ubuntu 18.04 and Nvidia RTX 2080 Ti.
 
-First, LGSVL's python api should be installed: https://github.com/lgsvl/PythonAPI.
+1. First, LGSVL's python api should be installed: https://github.com/lgsvl/PythonAPI.
 
-Then, install the requirements packages:
+2. Then, install the requirements packages:
 
 ```
 $ pip install -r requirements.txt
+```
+
+3. Apply patches for commonroad_reach:
+
+```
+$ patch /path/to/site-packages/commonroad_reach/utility/coordinate_system.py coordinate_system.py.patch
+$ patch /path/to/site-packages/commonroad_reach/data_structure/configuration.py configuration.py.patch
 ```
 
 Besides, we provide a [docker environment](https://zenodo.org/records/12666547) to evaluate the **violation detection** and **scenario mutation** functionalities. It is worth noting that the docker is not equipped with GPU environment, so the simulation-based testing cannot be tested:
